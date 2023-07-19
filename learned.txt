@@ -1,0 +1,33 @@
+big issues of SSG: stale data large build time when pages are big , 100000 pages takes an hour to build
+
+ISR: 
+updating statically generated pages without rebuilding, with revalidate option
+
+in getStaticProps() we return revalidate
+return {
+    props: {
+        data,
+    },
+    revalidate: 10, seconds
+};
+
+
+nextJs serves the client with cache html page
+when user send request it responses with the cache
+when revalidating after the delay (10 seconds) here the cache will be replaced so , the page still stale until we make another request
+
+in SSG:
+we don't have access to the user request in Real Time
+
+SSR: pre-rendering
+is used only when needed , it's resource consuming and slower than SSG or ISR, (fits in large projects)
+SSR is allowed only in a page , not allowed in a component
+getServerSideProps should return object containing Props
+we  can set cookies by accessing the res: we can use them to do operations on token , authentication
+
+Client Side data fetching:
+SEO is Irrelevant
+so when building user specific , SEO Irrelevant pages, like profiles, dashboards you better do Client side fetching 
+SWR is recommended for Client side fetching 
+
+swr auto updates the data fetched when changed
