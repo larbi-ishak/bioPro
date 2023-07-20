@@ -1,7 +1,8 @@
+import { FeaturesAsymmetrical, FeaturesCards } from "@/src/components/aboutComp";
+
 const About = () => {
   return (
     <div>
-      About
       {/*
             // carousel
             // card        text
@@ -9,6 +10,7 @@ const About = () => {
             // contact us button
 
                 */}
+        <FeaturesAsymmetrical />
     </div>
   );
 };

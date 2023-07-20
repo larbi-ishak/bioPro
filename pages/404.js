@@ -1,3 +1,4 @@
+import { NotFoundImage } from "@/src/components/notFound";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -7,14 +8,13 @@ const Not_found = () => {
     // redirecting user to homepage
     setTimeout(() => {
       router.push("/");
-    }, 1000);
+    }, 2500);
   }, []);
 
   return (
-    <div>
-      Ooops, 404 page Not_found
-      <p>Soon, you will get redirected to the home page</p>
-    </div>
+    <>
+    <NotFoundImage />
+    </>
   );
 };
 

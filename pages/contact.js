@@ -1,3 +1,4 @@
+import { GetInTouchSimple } from "@/src/components/contactCom";
 import Head from "next/head";
 
 const Contact = () => {
@@ -6,13 +7,9 @@ const Contact = () => {
       <Head>
         <title>ContactPage</title>
       </Head>
-      <p>
-        Contact
-        <br />
-        <i>E-Mail: ishak.larbi@inttic.dz</i>
-        <br />
-        <i>LinkedIn: LARBI Ishak</i>
-      </p>
+      <div style={{padding: "20px"}}>
+      <GetInTouchSimple />
+</div>
     </>
   );
 };

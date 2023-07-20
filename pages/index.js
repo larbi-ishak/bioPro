@@ -1,6 +1,13 @@
+import { CardsCarousel } from "@/src/components/carousel";
+import {  HeroText } from "@/src/components/indAbout";
+import { HeroImageBackground } from "@/src/components/indProd";
+import { StatsGridIcons } from "@/src/components/indStats";
 import Head from "next/head.js";
-import { useRouter } from "next/router";
+import { Button, Group } from '@mantine/core';
+import Link from "next/link";
+
 export default function Home() {
+    
 
     return (
         <>
@@ -17,7 +24,20 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className="container">
-                Home page
+                <CardsCarousel />
+                <HeroText />
+                <HeroImageBackground />
+                <div style={{margin: "25px 0"}}></div>
+                <StatsGridIcons data={[{title: "Products sold",value: "77", diff: 6},{title: "Products sold",value: "7", diff: 28},{title: "Products sold",value: "777", diff: 8}]} />
+                <div style={{justifyContent: "center"}}>
+<Link href={"/contact"} style={{textDecoration: "none"}}>
+<Group position="center" mt="xl">
+        <Button type="submit" size="md">
+        Contact Us
+        </Button>
+      </Group>
+</Link>
+                </div>
                 {/*
                     // carousel
                     // about us  some text + image    and link to that
@@ -30,4 +50,3 @@ export default function Home() {
         </>
     );
 }
-

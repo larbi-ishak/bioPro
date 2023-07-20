@@ -29,6 +29,7 @@ export default function App(props) {
       >
             <RootLayout>
                 <Navbar />
+                <div style={{marginTop: "80px"}}></div>
                 <Component {...pageProps} />
                 <Footer />
             </RootLayout>
