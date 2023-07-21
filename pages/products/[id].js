@@ -110,13 +110,11 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const id = context.params.id;
-  const data = await fetch(`http://localhost:8002/products/${id}`).then((res) =>
-    res.json(),
-  );
+  const { products } = await import("../../data/products.json");
+  const data = products.find((product)=> product.id == id)
+
   const category = data.category;
-  const similarProds = await fetch(
-    `http://localhost:8002/products?category=${category}`,
-  ).then((res) => res.json());
+  const similarProds = products.filter((product)=>product.category == category)
 
   return {
     props: {
