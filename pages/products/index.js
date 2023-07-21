@@ -1,32 +1,31 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Events = ({ productsList }) => {
   const [products, setProducts] = useState(productsList);
-  const router = useRouter();
 
-  async function handle_click() {
-    const response = await fetch(
-      "http://localhost:8002/products?category=sport",
-    );
-    const data = await response.json();
-    setProducts(data);
-    router.push("/products/?category=sport", undefined, {
-      shallow: true,
-    });
+  async function handleChange(e) {
+    const category = e.target.value;
+    if (category != "All") {
+      const data = productsList.filter((product)=>product.category == category)
+      setProducts(data);
+    } else {
+      setProducts(productsList);
+    }
   }
   return (
     <div>
-      {/*
-                    // filter option
-                        */}
-      <button onClick={() => handle_click()}>Filter: sports</button>
-      <h3>Products:</h3>
-      {/*
-                    // grid cards
+      <p>categories</p>
+      <select onChange={handleChange}>
+        <option>All</option>
+        <option>health</option>
+        <option>youth</option>
+        <option>politic</option>
+        <option>war</option>
+        <option>sport</option>
+      </select>
 
-                        */}
+      <h3>Products:</h3>
       <div>
         {products &&
           products.map((product) => {
@@ -50,7 +49,6 @@ export default Events;
 
 export async function getServerSideProps() {
   const { products } = await import("../../data/products.json");
-
   return {
     props: {
       productsList: products,

@@ -1,31 +1,31 @@
 import { useEffect, useState } from "react";
+
 const Cart = () => {
-  const [valid, setValid] = useState(true);
+  const [valid, setValid] = useState(false);
   const [cart, setCart] = useState([]);
 
+  // valid, setValid is used for the confirm order enable and disable
   useEffect(() => {
     // initialize current cart from the local Storage
     const data = JSON.parse(localStorage.getItem("cart")) || [];
     setCart(data);
+    // for the disable button
+    setValid(data.some((item) => item.quantity > 0));
   }, []);
 
   const total_price = cart.reduce((prev, curr) => {
     return parseInt(curr.price) * parseInt(curr.quantity) + parseInt(prev);
   }, 0);
 
-  // console.log("cart", cart);
-
-  const handleClear = () => {
-    localStorage.setItem("cart", "[]");
-    setCart([]);
-    setValid(false);
-  };
-
   // increase decrease quantity
   const handleQuantity = (id, sign) => {
     const newCart = cart.map((item) => {
       if (item.id === id) {
-        sign === "-" ? item.quantity-- : item.quantity++;
+        sign === "-"
+          ? item.quantity > 0
+            ? item.quantity--
+            : null
+          : item.quantity++;
       }
       return item;
     });
@@ -34,11 +34,18 @@ const Cart = () => {
     setValid(cart.some((item) => item.quantity > 0));
   };
 
+  const handleClear = () => {
+    localStorage.setItem("cart", "[]");
+    setCart([]);
+    setValid(false);
+  };
+
   const handleConfirm = () => {
     // TODO check the cart if its empty or something else
     localStorage.setItem("cart", "[]");
     setCart([]);
-    setValid(cart.some((item) => item.quantity > 0));
+    setValid(false);
+    // setValid(cart.some((item) => item.quantity > 0));
   };
 
   return (

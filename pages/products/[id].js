@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Product = ({ data }) => {
+const Product = ({ id, data, similarProds }) => {
   const [quantity, setQuantity] = useState(1);
   const [cart, setCart] = useState([]);
 
@@ -45,6 +45,7 @@ const Product = ({ data }) => {
       localStorage.setItem("cart", JSON.stringify(newCart));
     }
   };
+
   return (
     <div>
       Product: {JSON.stringify(data)}
@@ -64,6 +65,27 @@ const Product = ({ data }) => {
       <br />
       {/*// TODO notification that it is added to cart*/}
       <button onClick={handle_add_to_cart}>Add to Cart</button>{" "}
+
+      <h4>similar products</h4>
+      {/*limiting similar Prods to 3 products*/}
+      <div>
+        {similarProds &&
+          similarProds.map((product) => {
+            // condition not to render the product in itself as a similar product
+            if (product.id != id) {
+              return (
+                <div key={product.id}>
+                  <p>{JSON.stringify(product)}</p>
+                  <p>
+                    <Link href={`/products/${product.id}`}>
+                      <button>Details</button>{" "}
+                    </Link>
+                  </p>
+                </div>
+              );
+            }
+          })}
+      </div>
     </div>
   );
 };
@@ -91,10 +113,16 @@ export async function getStaticProps(context) {
   const data = await fetch(`http://localhost:8002/products/${id}`).then((res) =>
     res.json(),
   );
+  const category = data.category;
+  const similarProds = await fetch(
+    `http://localhost:8002/products?category=${category}`,
+  ).then((res) => res.json());
 
   return {
     props: {
       data,
+      id,
+      similarProds,
     },
   };
 }

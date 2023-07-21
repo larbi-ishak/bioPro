@@ -44,7 +44,7 @@
       "id": 6,
       "title": "title 6",
       "desc": "description 1",
-      "category": "war",
+      "category": "health",
       "date": "12-03-2013",
       "price": 60
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "title": "title 7",
       "desc": "description 1",
-      "category": "war",
+      "category": "health",
       "date": "12-03-2013",
       "price": 70
     },
