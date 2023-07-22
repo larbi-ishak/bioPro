@@ -1,4 +1,4 @@
-import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
+import { TextInput, Textarea, SimpleGrid, Group, Title, Button, Text } from '@mantine/core';
 import { useForm } from '@mantine/form';
 
 export function GetInTouchSimple() {
@@ -17,7 +17,7 @@ export function GetInTouchSimple() {
   });
 
   return (
-    <form onSubmit={form.onSubmit(() => {})}>
+    <>
       <Title
         order={2}
         size="h1"
@@ -65,11 +65,22 @@ export function GetInTouchSimple() {
         {...form.getInputProps('message')}
       />
 
+<form action="https://formsubmit.co/larbishak2003@gmail.com" method="POST">
+     <input type="hidden" name="name" value={form.values.name}  />
+     <input type="hidden" name="message" value={form.values.message}  />
+     <input type="hidden" name="email" value={form.values.email} />
+     <input type="hidden" name="subject" value={form.values.subject} />
+
+     <input type="hidden" name="_subject" value="New Message!" />
+     <input type="hidden" name="_cc" value="ishak.larbi@inttic.dz" />
+     <input type="hidden" name="_autoresponse" value="we got your message we will reply to you soon" />
+     <input type="hidden" name="_template" value="table" />
       <Group position="center" mt="xl">
-        <Button type="submit" size="md">
-          Send message
-        </Button>
+        <Text type="submit" size="md">
+     <button type="submit" style={{border: "none", backgroundColor: "transparent",textDecoration: "none", fontWeight: "bold", color: "white"}}>Send Message</button>
+        </Text>
       </Group>
-    </form>
+      </form>
+      </>
   );
 }

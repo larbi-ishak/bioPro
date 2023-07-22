@@ -40,12 +40,11 @@ const Cart = () => {
     setValid(false);
   };
 
-  const handleConfirm = () => {
+  const handleConfirm = (e) => {
+    if(!valid) e.preventDefault()
     // TODO check the cart if its empty or something else
     localStorage.setItem("cart", "[]");
-    setCart([]);
     setValid(false);
-    // setValid(cart.some((item) => item.quantity > 0));
   };
 
   return (
@@ -66,41 +65,27 @@ const Cart = () => {
         })}
       <p>total Price : {total_price}</p>
       <button onClick={handleClear}>clear cart</button>
-      <form>
+        <br />
+
+<form action="https://formsubmit.co/larbishak2003@gmail.com" method="POST">
         information:
-        <br />
-        <label>Name</label>
-        <input type="text" required />
-        <br />
-        <label>Phone</label>
-        <input type="phone" required />
-        <br />
-        <label>age</label>
-        <input type="number" required />
-        <br />
-        <label>address</label>
-        <input type="text" required />
-        <br />
-        <label>email</label>
-        <input type="email" />
-        <br />
-        <label>comment</label>
-        <input type="text" />
-        <br />
         cash on delivery
-        {valid ? (
-          <button type="submit" onClick={handleConfirm}>
-            {" "}
-            confirm order{" "}
-          </button>
-        ) : (
-          <button type="submit" onClick={handleConfirm} disabled>
-            confirm order
-          </button>
-        )}
-        {/* TODO after confirm send email to the person if provided*/}
-        {/* TODO after show page of order and thanks page  all this in Modal*/}
+        name:
+     <input type="text" name="name" required />
+        phone:
+     <input type="text" name="phone" required />
+        email:
+     <input type="email" name="email" />
+
+     <input type="hidden" name="_subject" value="New Order!" />
+     <input type="hidden" name="cart" value={JSON.stringify(cart)} />
+     <input type="hidden" name="totalPrice" value={total_price} />
+     <input type="hidden" name="_template" value="table" />
+     {/*other email can be added to receive*/}
+     <input type="hidden" name="_cc" value="ishak.larbi@inttic.dz" />
+     <input type="hidden" name="_autoresponse" value="thanks for purchasing the following products we will contact you soon to confirm your order" />
       </form>
+        {/* TODO after show page of order and thanks page  all this in Modal*/}
     </div>
   );
 };

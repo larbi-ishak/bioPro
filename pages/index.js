@@ -1,7 +1,7 @@
 import { CardsCarousel } from "@/src/components/carousel";
-import {  HeroText } from "@/src/components/indAbout";
-import { HeroImageBackground } from "@/src/components/indProd";
-import { StatsGridIcons } from "@/src/components/indStats";
+import {  HeroText } from "@/src/components/indexComponents/indAbout";
+import { HeroImageBackground } from "@/src/components/indexComponents/indAbout";
+import { StatsGridIcons } from "@/src/components/indexComponents/indAbout";
 import Head from "next/head.js";
 import { Button, Group } from '@mantine/core';
 import Link from "next/link";
@@ -30,22 +30,14 @@ export default function Home() {
                 <div style={{margin: "25px 0"}}></div>
                 <StatsGridIcons data={[{title: "Products sold",value: "77", diff: 6},{title: "Products sold",value: "7", diff: 28},{title: "Products sold",value: "777", diff: 8}]} />
                 <div style={{justifyContent: "center"}}>
-<Link href={"/contact"} style={{textDecoration: "none"}}>
-<Group position="center" mt="xl">
-        <Button type="submit" size="md">
-        Contact Us
-        </Button>
-      </Group>
-</Link>
+                        <Link href={"/contact"} style={{textDecoration: "none"}}>
+                            <Group position="center" mt="xl">
+                                <Button type="submit" size="md">
+                                    Contact Us
+                                </Button>
+                            </Group>
+                    </Link>
                 </div>
-                {/*
-                    // carousel
-                    // about us  some text + image    and link to that
-                    // our products  some text + image    and link to that
-                    // stats
-                    // contact us button
-
-                        */}
             </main>
         </>
     );
