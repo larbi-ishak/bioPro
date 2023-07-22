@@ -1,7 +1,7 @@
 import { CardsCarousel } from "@/src/components/carousel";
 import {  HeroText } from "@/src/components/indexComponents/indAbout";
-import { HeroImageBackground } from "@/src/components/indexComponents/indAbout";
-import { StatsGridIcons } from "@/src/components/indexComponents/indAbout";
+import { HeroImageBackground } from "@/src/components/indexComponents/indProd";
+import { StatsGridIcons } from "@/src/components/indexComponents/indStats";
 import Head from "next/head.js";
 import { Button, Group } from '@mantine/core';
 import Link from "next/link";
