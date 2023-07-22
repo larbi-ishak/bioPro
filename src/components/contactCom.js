@@ -76,9 +76,9 @@ export function GetInTouchSimple() {
      <input type="hidden" name="_autoresponse" value="we got your message we will reply to you soon" />
      <input type="hidden" name="_template" value="table" />
       <Group position="center" mt="xl">
-        <Text type="submit" size="md">
+        <Button type="submit" size="md">
      <button type="submit" style={{border: "none", backgroundColor: "transparent",textDecoration: "none", fontWeight: "bold", color: "white"}}>Send Message</button>
-        </Text>
+        </Button>
       </Group>
       </form>
       </>
