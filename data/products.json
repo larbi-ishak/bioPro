@@ -8,6 +8,26 @@
       "date": "12-03-2013",
       "price": 10,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -18,6 +38,26 @@
       "date": "12-03-2013",
       "price": 20,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -28,6 +68,26 @@
       "date": "12-03-2013",
       "price": 30,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -38,6 +98,26 @@
       "date": "12-03-2013",
       "price": 40,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -48,6 +128,26 @@
       "date": "12-03-2013",
       "price": 50,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -58,6 +158,26 @@
       "date": "12-03-2013",
       "price": 60,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -68,6 +188,26 @@
       "date": "12-03-2013",
       "price": 70,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -78,6 +218,26 @@
       "date": "12-03-2013",
       "price": 80,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -88,6 +248,26 @@
       "date": "12-03-2013",
       "price": 90,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
@@ -98,6 +278,26 @@
       "date": "12-03-2013",
       "price": 100,
       "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 par jour",
+      "indications":[
+        { 
+        "name": "reninforce immune system"
+        },
+        { 
+        "name": "anti oxydant"
+        },
+        { 
+        "name": "fatigue passagere"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Zinc",
+          "concentration": "200mg"
+        }
+      ],
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     }
   ],

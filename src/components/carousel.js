@@ -55,7 +55,7 @@ const data = [
   {
     image:
       'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Best forests to visit in North America',
+    title: 'Best health and beauty products',
   },
   {
     image:
@@ -96,10 +96,9 @@ export function CardsCarousel() {
   return (
     <Carousel
       slideSize="50%"
-      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: rem(2) }]}
+      breakpoints={[{ maxWidth: 'lg', slideSize: '100%', slideGap: rem(2) }]}
       slideGap="xl"
       align="start"
-      slidesToScroll={mobile ? 1 : 2}
     >
       {slides}
     </Carousel>

@@ -19,6 +19,7 @@ const Events = ({ productsList }) => {
     },
     title: {
       display: "inline",
+      marginLeft: "30px",
       fontWeight: "bold",
       fontSize: "18px"
     },
@@ -52,7 +53,7 @@ const Events = ({ productsList }) => {
         <option style={styles.option}>Sport</option>
       </select>
     </div>
-      <Grid >
+      <Grid style={{padding: "30px" }}>
         {products &&
           products.map((product) => {
             return (

@@ -1,7 +1,20 @@
 import { useEffect, useState } from "react";
+import { Button, Grid, Center} from "@mantine/core";
+import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Link from "next/link";
+import { TableScrollArea } from "@/src/components/productsComponents/inPordTable";
+import { TableScrollAr } from "@/src/components/productsComponents/inTable";
+import Image from "next/image";
 
 const Product = ({ id, data, similarProds }) => {
+  const styles={
+    button: {
+padding: "8px",backgroundColor: "transparent", textDecoration: "none",color: "white", border: "none"
+    },
+    buttonWrapper: {
+      margin: "5px"
+    }
+  }
   const [quantity, setQuantity] = useState(1);
   const [cart, setCart] = useState([]);
 
@@ -46,45 +59,59 @@ const Product = ({ id, data, similarProds }) => {
     }
   };
 
+  const {composantes, indications,image}=data
   return (
     <div>
-      Product: {JSON.stringify(data)}
-      <br />
-      quantity: {quantity}
-      <br />
-      price: {data.price * quantity}
-      <br />
-      <Link href={"/cart"}>
-        <button onClick={handle_add_to_cart}>Order Now</button>
-      </Link>
-      <br />
-      {"   "}
-      <button onClick={() => handleQuantity("+")}>+</button>
-      {"   "}
-      <button onClick={() => handleQuantity("-")}>-</button>
-      <br />
-      {/*// TODO notification that it is added to cart*/}
-      <button onClick={handle_add_to_cart}>Add to Cart</button>{" "}
-
-      <h4>similar products</h4>
-      {/*limiting similar Prods to 3 products*/}
+      <Grid>
+            <Grid.Col sm={12} md={4} >
+              <Center>
+              <Image src={image} height={250} width={250} alt="just iamge1l" />
+</Center>
+            </Grid.Col>
+            <Grid.Col sm={6} md={4} >
+              <TableScrollArea data={composantes} />
+              mode d'emploi
+              utilisation
+            </Grid.Col>
+            <Grid.Col sm={6} md={3} >
+              <TableScrollAr data={indications} />
+            </Grid.Col>
+      </Grid>
       <div>
+        quantity: {quantity}
+        <br />
+        price: {data.price * quantity}
+        <br />
+        <Button style={styles.buttonWrapper}>
+          <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
+        </Button>
+
+        <Button style={styles.buttonWrapper}>
+          <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
+        </Button>
+        <br />
+        {/*// TODO notification that it is added to cart*/}
+        <Button style={styles.buttonWrapper}>
+          <button style={styles.button} onClick={handle_add_to_cart}>Add to Cart</button>{" "}
+        </Button>
+        <Button>
+              <Link href={"/cart"}>
+          <button style={styles.button} onClick={handle_add_to_cart}>Order Now</button>{" "}
+              </Link>
+        </Button>
+      </div>
+      <h3>similar products</h3>
+      <div>
+      <Grid >
         {similarProds &&
           similarProds.map((product) => {
-            // condition not to render the product in itself as a similar product
-            if (product.id != id) {
-              return (
-                <div key={product.id}>
-                  <p>{JSON.stringify(product)}</p>
-                  <p>
-                    <Link href={`/products/${product.id}`}>
-                      <button>Details</button>{" "}
-                    </Link>
-                  </p>
-                </div>
-              );
-            }
+            return (
+            <Grid.Col span={4} key={product.id}>
+              <BadgeCard {...product} />
+            </Grid.Col>
+            );
           })}
+    </Grid>
       </div>
     </div>
   );
