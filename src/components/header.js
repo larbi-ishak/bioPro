@@ -62,12 +62,12 @@ const useStyles = createStyles((theme) => ({
     padding: `${rem(8)} ${rem(12)}`,
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
+    color:  theme.colors.dark[9] ,
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.teal[1]
+    backgroundColor: theme.colors.teal[3]
     },
 
     [theme.fn.smallerThan('sm')]: {
@@ -78,8 +78,8 @@ const useStyles = createStyles((theme) => ({
 
   linkActive: {
     '&, &:hover': {
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.colors.teal[1] }).background,
-      color: theme.fn.variant({ variant: 'light', color: theme.colors.teal[1] }).color,
+      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.colors.teal[4] }).background,
+      color: theme.colors.teal[9],
     },
   },
 }));

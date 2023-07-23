@@ -1,7 +1,15 @@
-import { TextInput, Textarea, SimpleGrid, Group, Title, Button, Text } from '@mantine/core';
+import { TextInput, Textarea, SimpleGrid, Group, Title, Button, createStyles } from '@mantine/core';
 import { useForm } from '@mantine/form';
 
 export function GetInTouchSimple() {
+const useStyles = createStyles((theme) => ({
+  Button: {
+    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
+      theme.colors.teal[4]
+    } 100%)`,
+  },
+}))
+
   const form = useForm({
     initialValues: {
       name: '',
@@ -16,6 +24,7 @@ export function GetInTouchSimple() {
     },
   });
 
+  const { classes } = useStyles();
   return (
     <>
       <Title
@@ -76,7 +85,7 @@ export function GetInTouchSimple() {
      <input type="hidden" name="_autoresponse" value="we got your message we will reply to you soon" />
      <input type="hidden" name="_template" value="table" />
       <Group position="center" mt="xl">
-        <Button type="submit" size="md">
+        <Button type="submit" size="md" className={classes.Button}>
      <button type="submit" style={{border: "none", backgroundColor: "transparent",textDecoration: "none", fontWeight: "bold", color: "white"}}>Send Message</button>
         </Button>
       </Group>

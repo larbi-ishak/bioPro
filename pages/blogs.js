@@ -5,16 +5,6 @@ const Blogs = ({ blogs }) => {
           <div>
       <ArticlesCardsGrid mockdata={blogs}/>
             <div>
-              {/*pass blogs here */}
-              {/*this will be removed*/}
-              {blogs &&
-                blogs.map((blog) => {
-                  return (
-                    <div key={blog.title}>
-                      <p>{JSON.stringify(blog)}</p>
-                    </div>
-                  );
-                })}
             </div>
           </div>
         );

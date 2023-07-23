@@ -1,6 +1,6 @@
 import { createStyles, Text, SimpleGrid, Container, rem,Group, Badge, Title } from '@mantine/core';
 
-import { IconTruck, IconCertificate, IconCoin } from '@tabler/icons-react';
+import {IconMessage ,IconTruck, IconCertificate, IconCoin } from '@tabler/icons-react';
 
 const useStyles = createStyles((theme) => ({
   feature: {
@@ -25,12 +25,15 @@ const useStyles = createStyles((theme) => ({
   },
 
   icon: {
-    color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+    color: theme.colors.teal[9]
   },
 
   title: {
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
   },
+  Badge: {
+    backgroundImage:  `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${ theme.colors.teal[4] } 100%)`
+  }
 }));
 
 
@@ -63,6 +66,12 @@ const mockdata = [
       'As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.',
   },
   {
+    icon: IconMessage,
+    title: 'Fast customer support',
+    description:
+      'As electricity builds up inside its body, it becomes more aggressive. One theory is that the electricity.',
+  },
+  {
     icon: IconCertificate,
     title: 'Best Quality Product',
     description:
@@ -82,9 +91,11 @@ export function FeaturesAsymmetrical() {
   return (
     <Container mt={30} mb={30} size="lg">
 <Group position="center">
-
-          <Badge variant="filled" size="lg">
-            Best company ever
+        <Title order={1} className={classes.title} ta="center" mt="sm">
+        INTERNATIONAL AMB
+        </Title>
+          <Badge variant="filled" size="lg" style={{marginTop: "25px"}} className={classes.Badge}>
+            Best Health and Beauty Products 
           </Badge>
         </Group>
   

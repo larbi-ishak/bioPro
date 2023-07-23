@@ -6,7 +6,9 @@
       "desc": "description 1",
       "category": "youth",
       "date": "12-03-2013",
-      "price": 10
+      "price": 10,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 2,
@@ -14,7 +16,9 @@
       "desc": "description 1",
       "category": "sport",
       "date": "12-03-2013",
-      "price": 20
+      "price": 20,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 3,
@@ -22,7 +26,9 @@
       "desc": "description 1",
       "category": "sport",
       "date": "12-03-2013",
-      "price": 30
+      "price": 30,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 4,
@@ -30,7 +36,9 @@
       "desc": "description 1",
       "category": "sport",
       "date": "12-03-2013",
-      "price": 40
+      "price": 40,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 5,
@@ -38,7 +46,9 @@
       "desc": "description 1",
       "category": "war",
       "date": "12-03-2013",
-      "price": 50
+      "price": 50,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 6,
@@ -46,7 +56,9 @@
       "desc": "description 1",
       "category": "health",
       "date": "12-03-2013",
-      "price": 60
+      "price": 60,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 7,
@@ -54,7 +66,9 @@
       "desc": "description 1",
       "category": "health",
       "date": "12-03-2013",
-      "price": 70
+      "price": 70,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 8,
@@ -62,7 +76,9 @@
       "desc": "description 1",
       "category": "health",
       "date": "12-03-2013",
-      "price": 80
+      "price": 80,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 9,
@@ -70,7 +86,9 @@
       "desc": "description 1",
       "category": "politic",
       "date": "12-03-2013",
-      "price": 90
+      "price": 90,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "id": 10,
@@ -78,7 +96,9 @@
       "desc": "description 1",
       "category": "politic",
       "date": "12-03-2013",
-      "price": 100
+      "price": 100,
+      "comprimes": "30 comprimes",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     }
   ],
   "blogs": [
@@ -86,22 +106,19 @@
       "title": "Blog title",
       "publish date": "01-01-1970",
       "content": "Lorem ipsum dolor sit amet, ",
-      "category": "beauty",
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "title": "Blog title 2",
       "publish date": "01-01-1970",
       "content": "Lorem ipsum dolor sit amet, ",
-      "category": "health",
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
       "title": "Blog title 3",
       "publish date": "01-01-1970",
       "content": "Lorem ipsum dolor sit amet, ",
-      "category": "beauty",
-    "image": "/photo.png"
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     }
   ]
 }

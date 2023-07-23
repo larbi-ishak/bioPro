@@ -1,8 +1,31 @@
-import Link from "next/link";
 import { useState } from "react";
+import { Grid, Center} from "@mantine/core";
+import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 
 const Events = ({ productsList }) => {
   const [products, setProducts] = useState(productsList);
+
+  const styles= {
+    select: {
+      backgroundColor: "transparet",
+      padding: "10px",
+      marginBottom: "10px",
+      display: "inline",
+      marginLeft: "10px",
+      fontWeight: "600",
+    },
+    option: {
+      fontWeight: "600",
+    },
+    title: {
+      display: "inline",
+      fontWeight: "bold",
+      fontSize: "18px"
+    },
+    wrapper: {
+      margin: "0 15px"
+    }
+  }
 
   async function handleChange(e) {
     const category = e.target.value;
@@ -15,32 +38,30 @@ const Events = ({ productsList }) => {
   }
   return (
     <div>
-      <p>categories</p>
-      <select onChange={handleChange}>
-        <option>All</option>
-        <option>health</option>
-        <option>youth</option>
-        <option>politic</option>
-        <option>war</option>
-        <option>sport</option>
+      <Center maw={400} h={100} mx="auto">
+      <h2 style={{marginTop: "-30px"}}>Products:</h2>
+    </Center>
+    <div style={styles.wrapper}>
+      <p style={styles.title}>Categories:</p>
+      <select style={styles.select} onChange={handleChange}>
+        <option style={styles.option}>All</option>
+        <option style={styles.option}>Health</option>
+        <option style={styles.option}>Youth</option>
+        <option style={styles.option}>Politic</option>
+        <option style={styles.option}>War</option>
+        <option style={styles.option}>Sport</option>
       </select>
-
-      <h3>Products:</h3>
-      <div>
+    </div>
+      <Grid >
         {products &&
           products.map((product) => {
             return (
-              <div key={product.id}>
-                <p>{JSON.stringify(product)}</p>
-                <p>
-                  <Link href={`/products/${product.id}`}>
-                    <button>Details</button>{" "}
-                  </Link>
-                </p>
-              </div>
+            <Grid.Col span={4} key={product.id}>
+              <BadgeCard {...product} />
+            </Grid.Col>
             );
           })}
-      </div>
+    </Grid>
     </div>
   );
 };

@@ -3,12 +3,19 @@ import {  HeroText } from "@/src/components/indexComponents/indAbout";
 import { HeroImageBackground } from "@/src/components/indexComponents/indProd";
 import { StatsGridIcons } from "@/src/components/indexComponents/indStats";
 import Head from "next/head.js";
-import { Button, Group } from '@mantine/core';
+import { Button, Group,createStyles } from '@mantine/core';
 import Link from "next/link";
 
 export default function Home() {
-    
+ const useStyles = createStyles((theme) => ({
+  Button: {
+    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
+      theme.colors.teal[4]
+    } 100%)`,
+  },
+}))   
 
+  const { classes } = useStyles();
     return (
         <>
             <Head>
@@ -32,7 +39,7 @@ export default function Home() {
                 <div style={{justifyContent: "center"}}>
                         <Link href={"/contact"} style={{textDecoration: "none"}}>
                             <Group position="center" mt="xl">
-                                <Button type="submit" size="md">
+                                <Button type="submit" size="md" className={classes.Button}>
                                     Contact Us
                                 </Button>
                             </Group>
