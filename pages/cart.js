@@ -84,6 +84,7 @@ const Cart = () => {
      {/*other email can be added to receive*/}
      <input type="hidden" name="_cc" value="ishak.larbi@inttic.dz" />
      <input type="hidden" name="_autoresponse" value="thanks for purchasing the following products we will contact you soon to confirm your order" />
+     <input type="submit" value={"send"}/>
       </form>
         {/* TODO after show page of order and thanks page  all this in Modal*/}
     </div>
