@@ -70,7 +70,7 @@ padding: "8px",backgroundColor: "transparent", textDecoration: "none",color: "wh
             </Grid.Col>
             <Grid.Col sm={6} md={4} >
               <TableScrollArea data={composantes} />
-              mode d'emploi
+              mode demploi
               utilisation
             </Grid.Col>
             <Grid.Col sm={6} md={3} >
