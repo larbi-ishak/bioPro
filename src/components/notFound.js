@@ -66,7 +66,7 @@ import Link from 'next/link';
             </Button>
 </Link>
           </div>
-          <Image src={image.src} className={classes.desktopImage} />
+          <Image src={image.src} className={classes.desktopImage} alt='just image'/>
         </SimpleGrid>
       </Container>
     );

@@ -5,6 +5,7 @@ import { StatsGridIcons } from "@/src/components/indexComponents/indStats";
 import Head from "next/head.js";
 import { Button, Group,createStyles } from '@mantine/core';
 import Link from "next/link";
+import { Demo } from "@/src/components/affix";
 
 export default function Home() {
  const useStyles = createStyles((theme) => ({

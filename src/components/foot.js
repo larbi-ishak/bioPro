@@ -94,7 +94,7 @@ export function FaqWithHeader() {
   return (
     <Container className={classes.wrapper} size="lg">
       <div className={classes.header}>
-        <Title className={classes.title}>INTERNATIONAL AMB</Title>
+        <Title className={classes.title}>INTERNATIONALAMB&copy;</Title>
         <Title className={classes.titleOverlay} role="presentation">
           AMB
         </Title>
@@ -103,7 +103,6 @@ export function FaqWithHeader() {
          <ContactIcons />
         </div>
       </div>
-
     </Container>
   );
 }

@@ -1,18 +1,39 @@
 import { useEffect, useState } from "react";
-import { Button, Grid, Center} from "@mantine/core";
+import { Button, Grid, Kbd,  Center, createStyles, Title, Divider} from "@mantine/core";
 import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Link from "next/link";
-import { TableScrollArea } from "@/src/components/productsComponents/inPordTable";
-import { TableScrollAr } from "@/src/components/productsComponents/inTable";
 import Image from "next/image";
+import { FaqWithBg } from "@/src/components/productsComponents/fqa";
+import { useDisclosure } from '@mantine/hooks';
+import { Modal } from '@mantine/core';
 
+const useStyles = createStyles((theme) => ({
+    kbd: {
+      fontSize: "23px",
+      colro: "black"
+    },
+
+    button: {
+    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
+      theme.colors.teal[4]
+    } 100%)`,
+    marginLeft: "8px"
+    }
+
+}))
 const Product = ({ id, data, similarProds }) => {
+  const [opened, { open, close }] = useDisclosure(false);
+
   const styles={
     button: {
-padding: "8px",backgroundColor: "transparent", textDecoration: "none",color: "white", border: "none"
+        padding: "18px",backgroundColor: "transparent", textDecoration: "none",color: "white", border: "none",
     },
     buttonWrapper: {
-      margin: "5px"
+      margin: "5px",
+      padding: 0
+    },
+    wrapper: {
+      margin: "20px auto",
     }
   }
   const [quantity, setQuantity] = useState(1);
@@ -59,54 +80,60 @@ padding: "8px",backgroundColor: "transparent", textDecoration: "none",color: "wh
     }
   };
 
-  const {composantes, indications,image}=data
+  const { classes } = useStyles();
+  const {image}=data
   return (
     <div>
       <Grid>
-            <Grid.Col sm={12} md={4} >
-              <Center>
-              <Image src={image} height={250} width={250} alt="just iamge1l" />
-</Center>
-            </Grid.Col>
-            <Grid.Col sm={6} md={4} >
-              <TableScrollArea data={composantes} />
-              mode demploi
-              utilisation
-            </Grid.Col>
-            <Grid.Col sm={6} md={3} >
-              <TableScrollAr data={indications} />
-            </Grid.Col>
-      </Grid>
-      <div>
-        quantity: {quantity}
-        <br />
-        price: {data.price * quantity}
-        <br />
-        <Button style={styles.buttonWrapper}>
-          <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
-        </Button>
+            <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
+              <Center  style={{borderRadius: "24px",padding: "10px", display: "block", border: "4px solid #ccc", paddingBottom: "0"}}>
+                <Image src={image} height={300} width={300} alt="just iamge" />
+                <br></br>
+                <div style={styles.wrapper}>
+                  <Title order={5} style={{display: "inline"}}>Unit price:</Title> <Kbd className={classes.kbd} >{data.price} DA</Kbd>
+                 {"  "} <Title order={5} style={{display: "inline"}}>Quantity:</Title> <Kbd className={classes.kbd}>{quantity}</Kbd>
+                  <br />
+                  <Title order={5} style={{display: "inline"}}>total price: </Title><Kbd className={classes.kbd} >{data.price * quantity} DA</Kbd>
+                  <Button className={classes.button} style={styles.buttonWrapper}>
+                    <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
+                  </Button>
 
-        <Button style={styles.buttonWrapper}>
-          <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
-        </Button>
-        <br />
-        {/*// TODO notification that it is added to cart*/}
-        <Button style={styles.buttonWrapper}>
-          <button style={styles.button} onClick={handle_add_to_cart}>Add to Cart</button>{" "}
-        </Button>
-        <Button>
-              <Link href={"/cart"}>
-          <button style={styles.button} onClick={handle_add_to_cart}>Order Now</button>{" "}
-              </Link>
-        </Button>
-      </div>
-      <h3>similar products</h3>
-      <div>
+                  <Button className={classes.button} style={styles.buttonWrapper}>
+                    <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
+                  </Button>
+                  <br />
+                  {/*// TODO notification that it is added to cart*/}
+                  <Modal opened={opened} onClose={close} withCloseButton={false}>
+                    Item added to Cart
+                  </Modal>
+                  <Button className={classes.button} onClick={open} style={styles.buttonWrapper}>
+                    <button style={styles.button} onClick={handle_add_to_cart}>Add to Cart</button>{" "}
+                  </Button>
+
+                  <Button className={classes.button}>
+                        <Link href={"/cart"}>
+                    <button style={styles.button} onClick={handle_add_to_cart}>Order Now</button>{" "}
+                        </Link>
+                  </Button>
+                </div>
+              </Center>
+            </Grid.Col>
+            
+            <Grid.Col md={6}>
+            <FaqWithBg data={data}/>
+            </Grid.Col>
+
+      </Grid>
+
+<Divider size="sm" />
+      
+      <div style={{margin: "30px"}}>
+      <h2>similar products</h2>
       <Grid >
         {similarProds &&
           similarProds.map((product) => {
             return (
-            <Grid.Col span={4} key={product.id}>
+            <Grid.Col md={4} key={product.id}>
               <BadgeCard {...product} />
             </Grid.Col>
             );
@@ -150,4 +177,13 @@ export async function getStaticProps(context) {
       similarProds,
     },
   };
+}
+
+function Demo() {
+
+  return (
+    <>
+      
+    </>
+  );
 }

@@ -96,7 +96,7 @@ export function CardsCarousel() {
   return (
     <Carousel
       slideSize="50%"
-      breakpoints={[{ maxWidth: 'lg', slideSize: '100%', slideGap: rem(2) }]}
+      breakpoints={[{ maxWidth: 'xl', slideSize: '100%', slideGap: rem(2) }]}
       slideGap="xl"
       align="start"
     >

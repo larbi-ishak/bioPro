@@ -1,11 +1,11 @@
 
-import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import RootLayout from "@/src/layouts/routLayout";
 import Navbar from "@/src/components/navbar";
 import Footer from "@/src/components/footer";
 import "@/styles/globals.css";
+import { Demo } from '@/src/components/affix';
 
 export default function App(props) {
   const { Component, pageProps } = props;
@@ -33,6 +33,7 @@ export default function App(props) {
                 <Component {...pageProps} />
                 <Footer />
             </RootLayout>
+                <Demo/>
       </MantineProvider>
     </>
   );
