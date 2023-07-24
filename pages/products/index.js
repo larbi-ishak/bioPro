@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Grid, Center} from "@mantine/core";
 import { BadgeCard } from "@/src/components/productsComponents/mainProd";
+import Head from "next/head";
 
 const Events = ({ productsList }) => {
   const [products, setProducts] = useState(productsList);

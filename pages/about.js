@@ -1,4 +1,5 @@
 import { FeaturesAsymmetrical} from "@/src/components/aboutComp";
+import Head from "next/head";
 
 const About = () => {
   return (

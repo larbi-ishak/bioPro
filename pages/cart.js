@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Head from "next/head";
 
 const Cart = () => {
   const [valid, setValid] = useState(false);
