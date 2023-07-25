@@ -112,8 +112,8 @@ import { TableScrollAr } from "@/src/components/productsComponents/inTable";
   
 
               <Accordion.Item className={classes.item} value="credit-card">
-                <Accordion.Control style={{fontWeight: 'bold'}}>Do you store credit card information securely?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control style={{fontWeight: 'bold'}}>Mode d'emploi</Accordion.Control>
+                <Accordion.Panel>1 par jour</Accordion.Panel>
               </Accordion.Item>
 
               <Accordion.Item className={classes.item} value="newsletter">

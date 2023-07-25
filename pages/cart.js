@@ -1,7 +1,39 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import {  Badge, Table, Group, Text,  ScrollArea, createStyles,Button, Center} from '@mantine/core';
+import { IconTrashXFilled } from "@tabler/icons-react";
 
+const useStyles = createStyles((theme) => ({
+    kbd: {
+      fontSize: "23px",
+      colro: "black"
+    },
+
+    button: {
+    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
+      theme.colors.teal[4]
+    } 100%)`,
+    marginLeft: "8px",
+    padding: 0
+    },
+    badge: {
+      color: theme.colors.teal[9]
+    }
+
+}))
 const Cart = () => {
+  const { classes } = useStyles();
+  const styles={
+    button: {
+        padding: " 4px 20px",backgroundColor: "transparent", textDecoration: "none",color: "white", border: "none",
+        display: "inline", fontWeight:"bold"
+    },
+    buttonClear: {
+        padding: " 4px 20px",backgroundColor: "transparent", textDecoration: "none",color: "white", border: "none",
+        display: "inline", fontWeight:"bold",  display: "flex", alignItems: "center"
+    },
+  }
+
   const [valid, setValid] = useState(false);
   const [cart, setCart] = useState([]);
 
@@ -13,6 +45,36 @@ const Cart = () => {
     // for the disable button
     setValid(data.some((item) => item.quantity > 0));
   }, []);
+
+  const rows = cart.map((item) => (
+    <tr key={item.id}>
+      <td>
+        <Group spacing="sm">
+          <div>
+            <Text fz="sm" fw={500}>
+              {item.product}
+            </Text>
+          </div>
+        </Group>
+      </td>
+
+      <td>
+        <Text >{item.price} DA</Text>
+      </td>
+      <td>
+        <Center>
+        <Button className={classes.button}>
+      <button onClick={() => handleQuantity(item.id, "+")} style={styles.button}>+</button>
+</Button>
+      <Text style={{display: "inline", fontSize: "20px",margin: "3px"}}>{item.quantity}</Text>
+      <Button className={classes.button}>
+      <button onClick={() => handleQuantity(item.id, "-")} style={styles.button}>-</button>
+</Button>
+</Center>
+      </td>
+      <td> {item.price * item.quantity} DA</td>
+    </tr>
+  ));
 
   const total_price = cart.reduce((prev, curr) => {
     return parseInt(curr.price) * parseInt(curr.quantity) + parseInt(prev);
@@ -62,34 +124,39 @@ const Cart = () => {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-    <div>
-      {cart &&
-        cart.map((item) => {
-          return (
-            <div key={item.id}>
-              title: {item.product} quantity: {item.quantity} price:{" "}
-              {item.price * item.quantity}
-              {/* increase decrease*/}
-              {"              "}
-              <button onClick={() => handleQuantity(item.id, "+")}>+</button>
-              {"              "}{" "}
-              <button onClick={() => handleQuantity(item.id, "-")}>-</button>
-            </div>
-          );
-        })}
-      <p>total Price : {total_price}</p>
-      <button onClick={handleClear}>clear cart</button>
-        <br />
+
+    <div style={{margin: "0px 30px"}}>
+      <Table verticalSpacing="sm">
+        <thead>
+          <tr>
+            <th>Products</th>
+            <th>Unit Price</th>
+            <th> <Center> quantity </Center> </th>
+            <th>sous total</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </Table>
+      <Center>
+      <Text style={{fontSize: "20px"}}>total Price : {total_price} DA</Text>
+          <br />
+        <Badge className={classes.badge}>cash on delivery</Badge>
+      </Center>
+      <Button className={classes.button}>
+      <button style={styles.buttonClear} onClick={handleClear}><IconTrashXFilled/>clear cart</button>
+      </Button>
+
+
+
 
 <form action="https://formsubmit.co/larbishak2003@gmail.com" method="POST">
-        information:
-        cash on delivery
-        name:
-     <input type="text" name="name" required />
-        phone:
-     <input type="text" name="phone" required />
-        email:
-     <input type="email" name="email" />
+        
+        <Text style={{display: "inline", }}>Name:</Text>
+     <input type="text" name="name" required style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
+        <Text style={{display: "inline"}}>Phone:</Text>
+     <input type="text" name="phone" required style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
+        <Text style={{display: "inline"}}>Email:</Text>
+     <input type="email" name="email" style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
 
      <input type="hidden" name="_subject" value="New Order!" />
      <input type="hidden" name="cart" value={JSON.stringify(cart)} />
@@ -98,10 +165,13 @@ const Cart = () => {
      {/*other email can be added to receive*/}
      <input type="hidden" name="_cc" value="ishak.larbi@inttic.dz" />
      <input type="hidden" name="_autoresponse" value="thanks for purchasing the following products we will contact you soon to confirm your order" />
-     <input type="submit" value={"send"}/>
+      <br />
+      <Center>
+     <input type="submit" value={"confirm order"} style={{textDecoration: "none", outline: "none", color: "white",  backgroundColor: "#1aa078",border: "none", fontWeight: "bold", margin: "8px",padding: "14px", borderRadius: "5px"}} />
+</Center>
       </form>
-        {/* TODO after show page of order and thanks page  all this in Modal*/}
-    </div>
+      </div>
+
 </>
   );
 };

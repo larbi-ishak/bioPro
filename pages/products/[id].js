@@ -10,7 +10,7 @@ import { Modal } from '@mantine/core';
 const useStyles = createStyles((theme) => ({
     kbd: {
       fontSize: "23px",
-      colro: "black"
+      color: "black"
     },
 
     button: {
@@ -27,6 +27,7 @@ const Product = ({ id, data, similarProds }) => {
   const styles={
     button: {
         padding: "18px",backgroundColor: "transparent", textDecoration: "none",color: "white", border: "none",
+        fontWeight: "bold"
     },
     buttonWrapper: {
       margin: "5px",
@@ -86,7 +87,7 @@ const Product = ({ id, data, similarProds }) => {
     <div>
       <Grid>
             <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
-              <Center  style={{borderRadius: "24px",padding: "10px", display: "block", border: "4px solid #ccc", paddingBottom: "0"}}>
+              <Center  style={{padding: "10px", display: "block", paddingBottom: "0"}}>
                 <Image src={image} height={300} width={300} alt="just iamge" />
                 <br></br>
                 <div style={styles.wrapper}>
