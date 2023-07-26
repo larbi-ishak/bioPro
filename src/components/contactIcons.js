@@ -73,7 +73,7 @@ const MOCKDATA = [
 
 export function ContactIconsList({ data = MOCKDATA, variant }) {
   const items = data.map((item, index) => <ContactIcon key={index} variant={variant} {...item} />);
-  return <Stack>{items}</Stack>;
+  return <Stack style={{overflowWrap: "anywhere"}}>{items}</Stack>;
 }
 
 export function ContactIcons() {

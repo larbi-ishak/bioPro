@@ -1,6 +1,5 @@
 import {
   Card,
-  Image,
   Text,
   Group,
   Badge,
@@ -9,6 +8,7 @@ import {
   rem,
 } from '@mantine/core';
 import Link from 'next/link';
+import Image from 'next/image'
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -42,8 +42,8 @@ export function BadgeCard({ image, title, desc,  price, comprimes,category,id })
 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
-      <Card.Section>
-        <Image src={image} alt={title} height={180} />
+      <Card.Section >
+        <Image src={image} alt={title} height={300}  style={{objectFit: "contain"}} width={300} />
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">
@@ -51,7 +51,7 @@ export function BadgeCard({ image, title, desc,  price, comprimes,category,id })
           <Text fz="lg" fw={500}>
             {title}
           </Text>
-          <Badge size="sm" style={{color:  `${theme.colors.teal[9]}`}}>{category}</Badge>
+          <Badge size="sm" style={{color:  `${theme.colors.teal[9]}`}}>{category.toString()}</Badge>
         </Group>
         <Text fz="sm" mt="xs">
           {desc}
