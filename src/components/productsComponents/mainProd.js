@@ -74,7 +74,7 @@ export function BadgeCard({ image, title, desc,  price, comprimes,category,id })
       <Group mt="xs">
         <Button radius="md" style={{ flex: 1, backgroundColor: `${theme.colors.teal[9]}` }} >
             <Link href={`/products/${id}`} style={{textDecoration: "none", color: "white"}}>
-          Details and Order
+          Details et Commande
 </Link>
         </Button>
       </Group>

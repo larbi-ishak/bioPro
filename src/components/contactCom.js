@@ -118,9 +118,9 @@ export function GetInTouchSimple() {
     <div className={classes.wrapper}>
       <SimpleGrid cols={2} spacing={50} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         <div>
-          <Title className={classes.title}>Contact us</Title>
+          <Title className={classes.title}>CONTACTEZ NOUS</Title>
           <Text className={classes.description} mt="sm" mb={30}>
-            Leave your email and we will get back to you within 24 hours
+          Laissez votre email et nous vous répondrons dans les 24 heures
           </Text>
 
           <ContactIconsList variant="white" />
@@ -130,15 +130,15 @@ export function GetInTouchSimple() {
         <div className={classes.form}>
       <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         <TextInput
-          label="Name"
-          placeholder="Your name"
+          label="Nom"
+          placeholder="Votre nom"
           name="name"
           variant="filled"
           {...form.getInputProps('name')}
         />
         <TextInput
           label="Email"
-          placeholder="Your email"
+          placeholder="Votre email"
           name="email"
           variant="filled"
           {...form.getInputProps('email')}
@@ -146,8 +146,8 @@ export function GetInTouchSimple() {
       </SimpleGrid>
 
       <TextInput
-        label="Subject"
-        placeholder="Subject"
+        label="Sujet"
+        placeholder="Sujet"
         mt="md"
         name="subject"
         variant="filled"
@@ -156,7 +156,7 @@ export function GetInTouchSimple() {
       <Textarea
         mt="md"
         label="Message"
-        placeholder="Your message"
+        placeholder="Votre message"
         maxRows={10}
         minRows={5}
         autosize
@@ -177,7 +177,7 @@ export function GetInTouchSimple() {
      <input type="hidden" name="_template" value="table" />
       <Group position="center" mt="xl">
         <Button type="submit" size="md" className={classes.Button}>
-     <button type="submit" style={{border: "none", backgroundColor: "transparent",textDecoration: "none", fontWeight: "bold", color: "white"}}>Send Message</button>
+     <button type="submit" style={{border: "none", backgroundColor: "transparent",textDecoration: "none", fontWeight: "bold", color: "white"}}>Envoyer Message</button>
         </Button>
       </Group>
       </form>

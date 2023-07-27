@@ -68,7 +68,7 @@ const MOCKDATA = [
   { title: 'Phone', description: '+213 770 481 549', icon: IconPhone },
   { title: 'Address', description: 'Cité bouamama N 209 T, Oran', icon: IconMapPin },
   
-  { title: 'Working hours', description: '8 a.m. – 11 p.m.', icon: IconSun },
+  { title: 'Heurs de service', description: '8 a.m. – 11 p.m.', icon: IconSun },
 ];
 
 export function ContactIconsList({ data = MOCKDATA, variant }) {

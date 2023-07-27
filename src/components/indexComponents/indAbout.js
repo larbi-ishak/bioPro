@@ -48,7 +48,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   highlight: {
-    color: theme.colors[theme.primaryColor][theme.colorScheme === 'dark' ? 4 : 6],
+    color: theme.colors.teal[7]
   },
 
   description: {
@@ -71,8 +71,10 @@ const useStyles = createStyles((theme) => ({
   },
 
   control: {
+    backgroundColor: theme.colors.teal[7],
     '&:not(:first-of-type)': {
       marginLeft: theme.spacing.md,
+
     },
 
     [theme.fn.smallerThan('xs')]: {
@@ -84,6 +86,9 @@ const useStyles = createStyles((theme) => ({
         marginLeft: 0,
       },
     },
+    '&:hover':{
+      backgroundColor: theme.colors.teal[9]
+    }
   },
 }));
 
@@ -95,24 +100,27 @@ export function HeroText() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI{' '}
+          Meilleurs Produits {" "}
           <Text component="span" className={classes.highlight} inherit>
-            code reviews
+          Health & Beauty
           </Text>{' '}
-          for any stack
+          Pour tous
         </Title>
 
         <Container p={0} size={600}>
           <Text size="lg" color="dimmed" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
+          Petite deseciption de 2 lignes ici
+          Petite deseciption de 2 lignes ici
+          Petite deseciption de 2 lignes ici
+          Petite deseciption de 2 lignes ici
+          Petite deseciption de 2 lignes ici
           </Text>
         </Container>
 
         <div className={classes.controls}>
 <Link href={"/about"} style={{textDecoration: "none"}}>
-          <Button className={classes.control} size="lg" style={{backgroundColor: "green"}}>
-            About Us
+          <Button className={classes.control} size="lg" >
+          A PROPOS
           </Button>
           </Link>
         </div>

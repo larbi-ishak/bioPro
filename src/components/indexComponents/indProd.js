@@ -39,13 +39,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   highlight: {
-    color: theme.colors[theme.primaryColor][4],
+    color: theme.colors.teal[7]
   },
 
   description: {
-    color: theme.colors.gray[0],
+    color: theme.colors.gray[4],
     textAlign: 'center',
-
     [theme.fn.smallerThan('xs')]: {
       fontSize: theme.fontSizes.md,
       textAlign: 'left',
@@ -65,6 +64,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   control: {
+    color: theme.colors.teal[7],
     height: rem(42),
     fontSize: theme.fontSizes.md,
 
@@ -99,25 +99,24 @@ export function HeroImageBackground() {
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Automated AI code reviews for{' '}
+          Meilleurs Produits {" "}
           <Text component="span" inherit className={classes.highlight}>
-            any stack
+          Health & Beauty
           </Text>
         </Title>
 
         <Container size={640}>
           <Text size="lg" className={classes.description}>
-            Build more reliable software with AI companion. AI is also trained to detect lazy
-            developers who do nothing and just complain on Twitter.
+          Petite discription du produits de 2 lignes
+          Petite discription du produits de 2 lignes
+          Petite discription du produits de 2 lignes
+          Petite discription du produits de 2 lignes
           </Text>
         </Container>
 
         <div className={classes.controls}>
           <Button className={classes.control} variant="white" size="lg">
           Decouvrez nos produits
-          </Button>
-          <Button className={cx(classes.control, classes.secondaryControl)} size="lg">
-            Live demo
           </Button>
         </div>
       </div>

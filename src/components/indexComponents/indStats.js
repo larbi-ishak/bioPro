@@ -42,7 +42,7 @@ export function StatsGridIcons({ data }) {
           <Text component="span" c={stat.diff > 0 ? 'teal' : 'red'} fw={700}>
             {stat.diff}%
           </Text>{' '}
-          {stat.diff > 0 ? 'increase' : 'decrease'} compared to last month
+          {stat.diff > 0 ? 'augmentation ' : 'diminuation'} par rapport au mois dernier 
         </Text>
       </Paper>
     );

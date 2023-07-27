@@ -5,7 +5,6 @@ import { StatsGridIcons } from "@/src/components/indexComponents/indStats";
 import Head from "next/head.js";
 import { Button, Group,createStyles } from '@mantine/core';
 import Link from "next/link";
-import { Demo } from "@/src/components/affix";
 
 export default function Home() {
  const useStyles = createStyles((theme) => ({
@@ -36,16 +35,14 @@ export default function Home() {
                 <HeroText />
                 <HeroImageBackground />
                 <div style={{margin: "25px 0"}}></div>
-                <StatsGridIcons data={[{title: "Products sold",value: "77", diff: 6},{title: "Products sold",value: "7", diff: 28},{title: "Products sold",value: "777", diff: 8}]} />
-                <div style={{justifyContent: "center"}}>
-                        <Link href={"/contact"} style={{textDecoration: "none"}}>
+                <StatsGridIcons data={[{title: "PRODUITS VENDUES",value: "77", diff: 6},{title: "NOUVEAUX  CLIENTS",value: "77", diff: 6},{title: "NOUVEAUX PRODUITS",value: "77", diff: 6}]} />
+                    <Link href={"/contact"} style={{textDecoration: "none"}}>
                             <Group position="center" mt="xl">
                                 <Button type="submit" size="md" className={classes.Button}>
-                                    Contact Us
+                                CONTACTEZ NOUS
                                 </Button>
                             </Group>
                     </Link>
-                </div>
             </main>
         </>
     );

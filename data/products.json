@@ -124,12 +124,12 @@
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Vitamine D3",
+          "concentration": "1,000 UI"
         },
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Vitamine K2",
+          "concentration": "102 mcg"
         }
       ],
     "image": "/applecider.png"
@@ -924,23 +924,21 @@
 
 
 
-
-
   "blogs": [
     {
-      "title": "Blog title",
+      "title": "Article titre",
       "publish date": "01-01-1970",
       "content": "Lorem ipsum dolor sit amet, ",
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
-      "title": "Blog title 2",
+      "title": "Article 2 titre ",
       "publish date": "01-01-1970",
       "content": "Lorem ipsum dolor sit amet, ",
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"
     },
     {
-      "title": "Blog title 3",
+      "title": "Article 3 titre ",
       "publish date": "01-01-1970",
       "content": "Lorem ipsum dolor sit amet, ",
     "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80"

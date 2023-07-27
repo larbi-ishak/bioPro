@@ -23,7 +23,7 @@ export function Demo() {
               style={transitionStyles}
               onClick={() => scrollTo({ y: 0 })}
             >
-              Scroll to top
+              Scroll
             </Button>
           )}
         </Transition>

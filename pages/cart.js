@@ -129,21 +129,21 @@ const Cart = () => {
       <Table verticalSpacing="sm">
         <thead>
           <tr>
-            <th>Products</th>
-            <th>Unit Price</th>
-            <th> <Center> quantity </Center> </th>
-            <th>sous total</th>
+            <th>Produits</th>
+            <th>Prix Unitaire</th>
+            <th> <Center> Quantité </Center> </th>
+            <th>Sous-Total</th>
           </tr>
         </thead>
         <tbody>{rows}</tbody>
       </Table>
       <Center>
-      <Text style={{fontSize: "20px"}}>total Price : {total_price} DA</Text>
+      <Text style={{fontSize: "20px"}}>Prix Total : {total_price} DA</Text>
           <br />
-        <Badge className={classes.badge}>cash on delivery</Badge>
+        <Badge className={classes.badge}>paiement à la livraison</Badge>
       </Center>
       <Button className={classes.button}>
-      <button style={styles.buttonClear} onClick={handleClear}><IconTrashXFilled/>clear cart</button>
+      <button style={styles.buttonClear} onClick={handleClear}><IconTrashXFilled/>vider le panier</button>
       </Button>
 
 
@@ -151,9 +151,9 @@ const Cart = () => {
 
 <form action="https://formsubmit.co/larbishak2003@gmail.com" method="POST">
         
-        <Text style={{display: "inline", }}>Name:</Text>
+        <Text style={{display: "inline", }}>Nom: *</Text>
      <input type="text" name="name" required style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
-        <Text style={{display: "inline"}}>Phone:</Text>
+        <Text style={{display: "inline"}}>Telephone: *</Text>
      <input type="text" name="phone" required style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
         <Text style={{display: "inline"}}>Email:</Text>
      <input type="email" name="email" style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
@@ -167,7 +167,7 @@ const Cart = () => {
      <input type="hidden" name="_autoresponse" value="thanks for purchasing the following products we will contact you soon to confirm your order" />
       <br />
       <Center>
-     <input type="submit" value={"confirm order"} style={{textDecoration: "none", outline: "none", color: "white",  backgroundColor: "#1aa078",border: "none", fontWeight: "bold", margin: "8px",padding: "14px", borderRadius: "5px"}} />
+     <input type="submit" value={"confirmer la commande"} style={{textDecoration: "none", outline: "none", color: "white",  backgroundColor: "#1aa078",border: "none", fontWeight: "bold", margin: "8px",padding: "14px", borderRadius: "5px"}} />
 </Center>
       </form>
       </div>

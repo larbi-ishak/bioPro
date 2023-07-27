@@ -12,6 +12,7 @@ import {
   rem,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { IconShoppingCartPlus } from '@tabler/icons-react';
 
 const HEADER_HEIGHT = rem(60);
 
@@ -100,7 +101,7 @@ export function HeaderResponsive({ links }) {
         close();
       }}
     >
-      {link.label}
+       {link.label == "cart"?<><IconShoppingCartPlus style={{display: "inline", lineHeight: "30px"}}/> </>  : link.label}
     </Link>
   ));
 
