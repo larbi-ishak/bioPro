@@ -81,7 +81,7 @@ import { TableScrollAr } from "@/src/components/productsComponents/inTable";
   
   export function FaqWithBg({data}) {
     const { classes } = useStyles();
-  const {composantes, indications,image, utilisation}=data
+  const {composantes, indications,desc, utilisation}=data
     return (
       <MantineProvider inherit theme={{ colorScheme: 'light' }}>
         <div className={classes.wrapper}>
@@ -103,6 +103,11 @@ import { TableScrollAr } from "@/src/components/productsComponents/inTable";
                 <Accordion.Panel> <TableScrollArea data={composantes} /> </Accordion.Panel>
               </Accordion.Item>
   
+              <Accordion.Item className={classes.item} value="credit-card">
+                <Accordion.Control style={{fontWeight: 'bold'}}>Description</Accordion.Control>
+                <Accordion.Panel>{desc}</Accordion.Panel>
+              </Accordion.Item>
+
               <Accordion.Item className={classes.item} value="another-account">
                 <Accordion.Control style={{fontWeight: 'bold'}}>Indications</Accordion.Control>
                 <Accordion.Panel>
@@ -117,7 +122,7 @@ import { TableScrollAr } from "@/src/components/productsComponents/inTable";
               </Accordion.Item>
 
               <Accordion.Item className={classes.item} value="newsletter">
-                <Accordion.Control style={{fontWeight: 'bold'}}>utilisation</Accordion.Control>
+                <Accordion.Control style={{fontWeight: 'bold'}}>Utilisation</Accordion.Control>
                 <Accordion.Panel>
                   <Table >
                     <tbody>
@@ -128,11 +133,9 @@ import { TableScrollAr } from "@/src/components/productsComponents/inTable";
                   </Table>
                 </Accordion.Panel>
               </Accordion.Item>
-  
-              <Accordion.Item className={classes.item} value="payment">
-                <Accordion.Control>What payment systems to you work with?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
-              </Accordion.Item>
+
+
+
             </Accordion>
           </Container>
         </div>

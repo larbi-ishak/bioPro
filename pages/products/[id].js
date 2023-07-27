@@ -104,12 +104,12 @@ const Product = ({ id, data, similarProds }) => {
             <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
               <Center  style={{padding: "10px", display: "block", paddingBottom: "0"}}>
                 <Image src={image} height={250} width={300} alt="just iamge" style={{objectFit: "contain"}}/>
-                <p style={{color: "black"}}>{data.desc}</p>
+                <Title>{data.title}</Title>
                 <div style={styles.wrapper}>
                   <Title order={5} style={{display: "inline"}}>Unit price:</Title> <Kbd className={classes.kbd} >{data.price} DA</Kbd>
                  {"  "} <Title order={5} style={{display: "inline"}}>Quantity:</Title> <Kbd className={classes.kbd}>{quantity}</Kbd>
                   <br />
-                  <Title order={5} style={{display: "inline"}}>total price: </Title><Kbd className={classes.kbd} >{data.price * quantity} DA</Kbd>
+                  <Title order={5} style={{display: "inline"}}>total price: </Title><Kbd className={classes.kbd} >{Math.round(data.price * quantity)} DA</Kbd>
                   <Button className={classes.button} style={styles.buttonWrapper}>
                     <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
                   </Button>

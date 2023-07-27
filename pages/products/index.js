@@ -31,8 +31,8 @@ const Events = ({ productsList }) => {
 
   async function handleChange(e) {
     const category = e.target.value;
-    if (category != "All") {
-      const data = productsList.filter((product)=>product.category == category)
+    if (category != "Compléments Alimentaires") {
+      const data = productsList.filter((product)=>product.category.includes(category) )
       setProducts(data);
     } else {
       setProducts(productsList);
@@ -59,12 +59,10 @@ const Events = ({ productsList }) => {
     <div style={styles.wrapper}>
       <p style={styles.title}>Categories:</p>
       <select style={styles.select} onChange={handleChange}>
-        <option style={styles.option}>All</option>
-        <option style={styles.option}>Health</option>
-        <option style={styles.option}>Youth</option>
-        <option style={styles.option}>Politic</option>
-        <option style={styles.option}>War</option>
-        <option style={styles.option}>Sport</option>
+        <option style={styles.option}>Compléments Alimentaires</option>
+        <option style={styles.option}>Gynecologie</option>
+        <option style={styles.option}>Dermatologie</option>
+        <option style={styles.option}>Pediatrie</option>
       </select>
     </div>
       <Grid style={{padding: "30px" }}>

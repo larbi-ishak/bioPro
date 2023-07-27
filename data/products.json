@@ -4,49 +4,121 @@
       "id": 1,
       "title": "APPLE CIDER COMPLEX",
       "desc": "apple cider complex product for children and adults",
-      "category":["youth", "sport"] ,
-      "price": 10,
+      "category":["Compléments Alimentaires"] ,
+      "price": 942.48,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "1 à 3 comprimés par jour avec un verre d’eau de préférence avant les repas ou selon les recommandations de votre médecin ou de votre pharmacien.",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Perte de poids et coupe l'appétit"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Diminuer le mauvais cholestérol"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Aide a régulier le glycémie"
+        },
+        { 
+        "name": "Améliore la digestion et métabolisme sain des nutriments"
+        },
+        {
+          "name": "Fournit un soutien antyoxidant"
         }
 
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Bromelaïne",
+          "concentration": "24.6mg"
+        },
+        {
+          "composanteActive": "Poudre de spiruline",
+          "concentration": "98.5 mg"
+        },
+        {
+          "composanteActive": "Poudre de varech",
+          "concentration": "98.5 mg"
+        },
+        {
+          "composanteActive": "Vinaigre de cidre de pomme",
+          "concentration": "344.8 mg"
+        },
+        {
+          "composanteActive": "Pectine de pomme",
+          "concentration": "24.6 mg"
+        },
+        {
+          "composanteActive": "Poudre de lécithine de soja",
+          "concentration": "98.5 mg"
+        },
+        {
+          "composanteActive": "Vitamine B6 Pyridoxine",
+          "concentration": "14 mg"
+        },
+        {
+          "composanteActive": "Chlorure de Potassium",
+          "concentration": "47mg"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 2,
-      "title": "title 2",
-      "desc": "description 1",
-      "category": "sport",
-      "price": 20,
+      "title": "VITAMINE D3",
+      "desc": "VITAMINE D3",
+      "category": ["Compléments Alimentaires"] ,
+      "price": 900.06,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "Comprimé par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.  Ne pas dépasser la dose recommandée",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Carence en vitamine D3 chez les sujets exposé: (sujets âgés, femme enceinte ou qui allaite, personne non exposés au soleil)"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Renforce le système immunitaire"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Préserve le cerveau et la fonction musculaire"
+        },
+        { 
+        "name": "Maintient la santé des os et des dents"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Vitamine D",
+          "concentration": "4,000 UI"
+        }
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 3,
+      "title": "VITAMINE D3 & K2",
+      "desc": "VITAMINE D3 & K2",
+      "category": ["Compléments Alimentaires", "Dermatologie"] ,
+      "price": 864.25,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 comprimé par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "activation de l’ostéocalcine par le vitamne K2"
+        },
+        { 
+        "name": "Carence en vitamine D3 chez les sujets exposé: (sujets âgés, femme enceinte ou qui allaite, personne non exposés au soleil)"
+        },
+        { 
+        "name": "Maintient la santé des os et des dents"
+        },
+        { 
+        "name": "Préserve le cerveau et la fonction musculaire"
+        },
+        { 
+        "name": "Renforce le système immunitaire"
         }
 
       ],
@@ -54,32 +126,7 @@
         {
           "composanteActive": "Zinc",
           "concentration": "200mg"
-        }
-      ],
-    "image": "/applecider.png"
-    },
-    {
-      "id": 3,
-      "title": "title 3",
-      "desc": "description 1",
-      "category": "sport",
-      "price": 30,
-      "comprimes": "30 comprimes",
-      "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
-      "indications":[
-        { 
-        "name": "reninforce immune system"
         },
-        { 
-        "name": "anti oxydant"
-        },
-        { 
-        "name": "fatigue passagere"
-        }
-
-      ],
-      "composantes": [
         {
           "composanteActive": "Zinc",
           "concentration": "200mg"
@@ -89,208 +136,796 @@
     },
     {
       "id": 4,
-      "title": "title 4",
-      "desc": "description 1",
-      "category": "sport",
-      "price": 40,
+      "title": "ACIDOPHILUS",
+      "desc": "ACIDOPHILUS",
+      "category": ["Compléments Alimentaires", "Gynecologie", "Pediatrie"] ,
+      "price": 1350.00,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "1 à 3 comprimés par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Régule la digestion et assure un bon transit intestinal"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Atténue les troubles digestifs chez des patients intolérants au lactose"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Diarrhée post antibiothérapie"
+        },
+        { 
+        "name": "Infections vaginales et mycoses à répétition chez la femme"
         }
 
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Lactobacillus acidophilus",
+          "concentration": "500,000,000 UFC"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 5,
-      "title": "title 5",
-      "desc": "description 1",
-      "category": "war",
-      "price": 50,
-      "comprimes": "30 comprimes",
+      "title": "VITAMINE D3",
+      "desc": "VITAMINE D3",
+      "category": ["Compléments Alimentaires" , "Gynecologie"] ,
+      "price": 720,
+      "comprimes": "12 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "1 comprimé par semaine avec un verre d’eau ou Selon les recommandations de votre médecin ou de votre pharmacie",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Carence en vit d3 chez les sujets exposé : (sujets âgés , femme enceinte ou qui allaite ,personne non exposés au soleil )"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Maintient la santé des os et des dents"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Préserve le cerveau et la fonction musculaire"
+        },
+        { 
+        "name": "Renforce le système immunitaire"
         }
 
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Vitamine D",
+          "concentration": "50.000 IU"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 6,
-      "title": "title 6",
-      "desc": "description 1",
-      "category": "health",
-      "price": 60,
+      "title": "VITAMINE D3",
+      "desc": "VITAMINE D3",
+      "category": ["Compléments Alimentaires", "Gynecologie"] ,
+      "price": 619.99,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "Comprimé par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.  Ne pas dépasser la dose recommandée",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Carence en vit d3 chez les sujets exposé : (sujets âgés , femme enceinte ou qui allaite ,personne non exposés au soleil )"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Maintient la santé des os et des dents"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Préserve le cerveau et la fonction musculaire"
+        },
+        { 
+        "name": "Renforce le système immunitaire"
         }
-
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Vitamine D",
+          "concentration": "1,000 UI"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 7,
-      "title": "title 7",
-      "desc": "description 1",
-      "category": "health",
-      "price": 70,
+      "title": "VITAMINE D3",
+      "desc": "VITAMINE D3",
+      "category": ["Compléments Alimentaires", "Pediatrie"] ,
+      "price": 499.98,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "Comprimé par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.  Ne pas dépasser la dose recommandée",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Carence en vit d3 chez les sujets exposé : (sujets âgés , femme enceinte ou qui allaite ,personne non exposés au soleil )"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Maintient la santé des os et des dents"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Préserve le cerveau et la fonction musculaire"
+        },
+        { 
+        "name": "Renforce le système immunitaire"
         }
-
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Vitamine D",
+          "concentration": "500 UI"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 8,
-      "title": "title 8",
-      "desc": "description 1",
-      "category": "health",
-      "price": 80,
+      "title": "A-Z MULTIVITAMINES ET MENIRALES",
+      "desc": "A-Z MULTIVITAMINES ET MENIRALES",
+      "category": ["Compléments Alimentaires", "Gynecologie"] ,
+      "price": 1450,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "1 à 2 comprimés par jour avec un verre d’eau ou Selon les recommandations de votre medecin",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "nergie et vitalité."
         },
         { 
-        "name": "anti oxydant"
+        "name": "Fatigue intellectuelle et physique."
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Période de convalescence."
+        },
+        { 
+        "name": "Apport alimentaire déséquilibré et insuffisant."
+        },
+        { 
+        "name": "Asthénie fonctionnelle."
         }
 
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
+          "composanteActive": "DL-choline",
+          "concentration": "12 mg"
+        },
+        {
+          "composanteActive": "L-Glutamine",
+          "concentration": "mg"
+        },
+        {
+          "composanteActive": "Extrait de pépins de raisin",
+          "concentration": "600 mg"
+        },
+        {
+          "composanteActive": "Vitamine K1",
+          "concentration": "16mg"
+        },
+        {
+          "composanteActive": "Poudre de curcuma",
+          "concentration": "50 mg"
+        },
+        {
+          "composanteActive": "Vtamine B1",
+          "concentration": "1,1mg"
+        },
+        {
+          "composanteActive": "Vitamine B2",
+          "concentration": "1.4 mg"
+        },
+        {
+          "composanteActive": "Vitamine B3 Niacine",
+          "concentration": "14mg"
+        },
+        {
+          "composanteActive": "Vitamine B5",
+          "concentration": "12mg"
+        },
+        {
+          "composanteActive": "Vitamine B6",
+          "concentration": "42mg"
+        },
+        {
+          "composanteActive": "Biotine",
+          "concentration": "50 mcg"
+        },
+        {
+          "composanteActive": "Acide folique",
+          "concentration": "200 mcg"
+        },
+        {
+          "composanteActive": "Vitamine B12",
+          "concentration": "2.5 mcg"
+        },
+        {
+          "composanteActive": "Vitamine C",
+          "concentration": "80 mg"
+        },
+        {
+          "composanteActive": "Magnésium",
           "concentration": "200mg"
+        },
+        {
+          "composanteActive": "Zinc",
+          "concentration": "14mg"
+        },
+        {
+          "composanteActive": "Fumarate ferreux",
+          "concentration": "20 mg"
+        },
+        {
+          "composanteActive": "Vitamine E",
+          "concentration": "75 mg"
+        },
+        {
+          "composanteActive": "Bioflavonoïdes d'agrumes",
+          "concentration": "12mg"
+        },
+        {
+          "composanteActive": "Manganèse",
+          "concentration": "2mg"
+        },
+        {
+          "composanteActive": "Calcium",
+          "concentration": "112 mg"
+        },
+        {
+          "composanteActive": "Vitamine D3",
+          "concentration": "5 mcg"
+        },
+        {
+          "composanteActive": "Vitamine A",
+          "concentration": "800 mcg"
+        },
+        {
+          "composanteActive": "Iodure",
+          "concentration": "150 mcg"
+        },
+        {
+          "composanteActive": "Cuivre",
+          "concentration": "1mg"
+        },
+        {
+          "composanteActive": "Sélénium",
+          "concentration": "55 mcg"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 9,
-      "title": "title 9",
-      "desc": "description 1",
-      "category": "politic",
-      "price": 90,
+      "title": "COLLAGENE",
+      "desc": "COLLAGENE",
+      "category": ["Compléments Alimentaires", "Dermatologie"] ,
+      "price": 2500,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "mode d'emploi": "1 à 2 capsules par jour avec un verre d’eau ou Selon les recommandations de votre médecin ou de votre pharmacien.",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Augmente la résistance et l’élasticité , des tissus"
         },
         { 
-        "name": "anti oxydant"
+        "name": "Augmente l’hydratation de la peau Ralenti les signes de l'âge"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "effet antioxydant et protection cellulaire"
+        },
+        { 
+        "name": "réduit la cellulite /vergetures"
         }
 
       ],
       "composantes": [
         {
-          "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "composanteActive": "Collagène marin",
+          "concentration": "350 mg"
+        },
+        {
+          "composanteActive": "Vitamine C",
+          "concentration": "40 mg"
+        },
+        {
+          "composanteActive": "Acide hyalironique",
+          "concentration": "30 mg"
+        },
+        {
+          "composanteActive": "Vitamine E",
+          "concentration": "5.5 mg"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 10,
-      "title": "title 10",
-      "desc": "description 1",
-      "category": "politic",
-      "price": 100,
+      "title": "CHILDREN'S MULTIVITAMIN",
+      "desc": "CHILDREN'S MULTIVITAMIN",
+      "category": ["Compléments Alimentaires", "Pediatrie"] ,
+      "price": 799.99,
       "comprimes": "30 comprimes",
-      "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 par jour",
+      "utilisation": "chez les enfants à partir de 4 ans",
+      "mode d'emploi": "1 à 2 comprimés par jour a croquer ou selon les recommandations de votre médecin ou de votre pharmacien.",
       "indications":[
         { 
-        "name": "reninforce immune system"
+        "name": "Asthénie fonctionnelle"
         },
         { 
-        "name": "anti oxydant"
+        "name": "alimentaire déséquilibré et insuffisant"
         },
         { 
-        "name": "fatigue passagere"
+        "name": "Vitalité physique"
+        },
+        { 
+        "name": "Croissance osseuse"
         }
 
       ],
       "composantes": [
         {
+          "composanteActive": "Vitamin A",
+          "concentration": "400 ug"
+        },
+        {
+          "composanteActive": "Vitamin D3",
+          "concentration": "2.5 ug"
+        },
+        {
+          "composanteActive": "Vitamin E",
+          "concentration": "6 mg"
+        },
+        {
+          "composanteActive": "Vitamin C",
+          "concentration": "40 mg"
+        },
+        {
+          "composanteActive": "Thiamin (Vitamin B1)",
+          "concentration": "0.55 mg"
+        },
+        {
+          "composanteActive": "Riboflavin (Vitamin B2)",
+          "concentration": "0.7 mg"
+        },
+        {
+          "composanteActive": "Niacin",
+          "concentration": "8 mg NE"
+        },
+        {
+          "composanteActive": "Vitamin B6",
+          "concentration": "0.7 mg"
+        },
+        {
+          "composanteActive": "Folic acid",
+          "concentration": "100 ug"
+        },
+        {
+          "composanteActive": "Vitamin B12",
+          "concentration": "1.25 ug"
+        },
+        {
+          "composanteActive": "Pantothenic acid",
+          "concentration": "3 mg"
+        },
+        {
+          "composanteActive": "Iron",
+          "concentration": "7 mg"
+        },
+        {
           "composanteActive": "Zinc",
-          "concentration": "200mg"
+          "concentration": "5 mg"
+        },
+        {
+          "composanteActive": "Iodine",
+          "concentration": "75 ug"
         }
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 11,
+      "title": "IMMUNITY BOOSTER",
+      "desc": "IMMUNITY BOOSTER",
+      "category": ["Compléments Alimentaires", "Gynecologie", "Pediatrie"] ,
+      "price": 699.99,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 2 comprimés par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Renforce le système immunitaire"
+        },
+        { 
+        "name": "Effet anti-oxydant"
+        },
+        { 
+        "name": "État de fatigue passagère"
+        }
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Vitamine C",
+          "concentration": "100 mg"
+        },
+        {
+          "composanteActive": "Zinc",
+          "concentration": "15 mg"
+        }
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 12,
+      "title": "BIOTINE",
+      "desc": "BIOTINE",
+      "category": ["Compléments Alimentaires", "Dermatologie"] ,
+      "price": 2400,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 comprimé par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Élimine les rides"
+        },
+        { 
+        "name": "Augmente l’hydratation et améliore l’apparence générale de la peau"
+        },
+        { 
+        "name": "Améliore la santé et la qualité des ongles fragiles"
+        },
+        { 
+        "name": "Utiliser dans la chute de cheveux"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Biotine",
+          "concentration": "10,000 mcg"
+        }
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 13,
+      "title": "BEETROOT EXTRACTE",
+      "desc": "BEETROOT EXTRACT",
+      "category": ["Compléments Alimentaires", "Gynecologie"] ,
+      "price": 900.06,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 3 capsules par jour avec un verre d’eau ou Selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "hepato-protecteur par sa richesse en betaine"
+        },
+        { 
+        "name": "Améliore la vision et protége la rétine"
+        },
+        { 
+        "name": "Réduit l’hypertension et Améliore l’oxygénation cellulaire"
+        },
+        { 
+        "name": "Améliore les performances physiques"
+        },
+        { 
+        "name": "Une excellente source pour l’acide folique B9 et le fer en cas d’anémie"
+        },
+        { 
+        "name": "Diminue le mauvais cholestérol"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Extrait de betterave",
+          "concentration": "200 mg"
+        }
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 14,
+      "title": "MACA",
+      "desc": "MACA",
+      "category": ["Compléments Alimentaires", "Gynecologie"] ,
+      "price": 2100,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 3 capsules par jour avec un verre d’eau ou Selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Accroit la fertilité et la vigueur sexuelle"
+        },
+        { 
+        "name": "Augmente le libido chez l'homme et la femme."
+        },
+        { 
+        "name": "favorise le bien-être général : elle combat le stress et les douleurs de la menstruation"
+        },
+        { 
+        "name": "réduit les effets de la pré-ménopause, grâce à son effet de 'régulateur d'hormones'" 
+        },
+        {
+          "name": "stimule le système immunitaire et booste la vitalité."
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "extrait de MACA",
+          "concentration": "500 mg"
+        }
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 15,
+      "title": "Spirulina bio",
+      "desc": "Spirulina bio",
+      "category": ["Compléments Alimentaires", "Gynecologie"] ,
+      "price": 1900,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 2 capsules par jour avec un verre d’eau ou Selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Améliore l’endurance et la résistance"
+        },
+        { 
+        "name": "Entretien le tonus et l’énergie et lutte contre la fatigue"
+        },
+        { 
+        "name": "Soutient les défenses immunitaires."
+        },
+        { 
+        "name": "Détoxifie le corps et Aide au contrôle du poids"
+        },
+        { 
+        "name": "Favorise la récupération musculaire"
+        },
+        { 
+        "name": "Excellent source de micronutriment"
+        }
+
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Spiruline Bio",
+          "concentration": "500 mg"
+        }
+        
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 16,
+      "title": "VITAMIN C",
+      "desc": "VITAMIN C",
+      "category": ["Compléments Alimentaires", "Dermatologie"] ,
+      "price": 750,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 2 capsules par jour avec un verre d’eau ou Selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Renforce le système immunitaire"
+        },
+        { 
+        "name": "effet anti oxydant"
+        },
+        { 
+        "name": "état de fatigue passagère"
+        },
+        { 
+        "name": "Augmente l’absorption du fer"
+        },
+        { 
+        "name": "Prévention de la dégénérescence maculaire"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Vitamin c",
+          "concentration": "500 mg"
+        }
+        
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 17,
+      "title": "HAIR, SKIN & NAILS",
+      "desc": "HAIR, SKIN & NAILS",
+      "category": ["Compléments Alimentaires", "Dermatologie"] ,
+      "price": 1600,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "Un comprimé chaque jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien.  Ne pas dépasser la dose recommandée",
+      "indications":[
+        { 
+        "name": "Améliore l’état de la peau"
+        },
+        { 
+        "name": "Améliore la santé et qualité des ongles fragiles"
+        },
+        { 
+        "name": "Utiliser dans la chute de cheveux"
+        },
+        { 
+        "name": "Maintien un métabolisme normal des aliments"
+        }
+
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Vitamine D3",
+          "concentration": "5 mcg"
+        },
+        {
+          "composanteActive": "Vitamine E",
+          "concentration": "2 mga-TE"
+        },
+        {
+          "composanteActive": "Vitamine C",
+          "concentration": "80 mg"
+        },
+        {
+          "composanteActive": "Thiamine (Vitamine B1)", 
+          "concentration": "6,3 mg"
+        },
+        {
+          "composanteActive": "Riboflavine (Vitamine B2)",
+          "concentration": "3,5 mg"
+        },
+        {
+          "composanteActive": "Niacine",
+          "concentration": "16 mg NE"
+        },
+        {
+          "composanteActive": "Vitamine B6",
+          "concentration": "7 mg"
+        },
+        {
+          "composanteActive": "Acide folique",
+          "concentration": "500 mcg"
+        },
+        {
+          "composanteActive": "Vitamine B12",
+          "concentration": "22.5 mcg"
+        },
+        {
+          "composanteActive": "Biotine",
+          "concentration": "5 mcg"
+        },
+        {
+          "composanteActive": "Magnésium",
+          "concentration": "75 mg"
+        },
+        {
+          "composanteActive": "Fer",
+          "concentration": "14 mg"
+        },
+        {
+          "composanteActive": "Zinc",
+          "concentration": "10 mg"
+        },
+        {
+          "composanteActive": "Cuivre",
+          "concentration": "1,000 mcg"
+        },
+        {
+          "composanteActive": "Manganèse",
+          "concentration": "2 mg"
+        },
+        {
+          "composanteActive": "Sélénium",
+          "concentration": "110 mcg"
+        },
+        {
+          "composanteActive": "Chrome",
+           "concentration": "40 mcg"
+        },
+        {
+          "composanteActive": "Bêta-carotène",
+          "concentration": "4 mg"
+        },
+        {
+          "composanteActive": "L-Cystéine",
+          "concentration": "10 mg"
+        },
+        {
+          "composanteActive": "Acide pantothénique (Vitamine B5)",
+          "concentration": "40 mg"
+        },
+        {
+          "composanteActive": "Biotine",
+          "concentration": "15 mcg"
+        }
+        
+      ],
+    "image": "/applecider.png"
+    },
+    {
+      "id": 18,
+      "title": "COMPLEX B",
+      "desc": "COMPLEX B",
+      "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
+      "price": 949.98,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 2 comprimés par jour a croquer ou selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Prévention des malformations congénitales"
+        },
+        { 
+        "name": "Prévention d’anémie par carence en B9 et B12"
+        },
+        { 
+        "name": "Améliore les signes cutanéo-muqueax telle que: dermite séborréhéique, chéilite stomatite"
+        },
+        { 
+        "name": "Protège des neurones et réduit les douleurs neuropathiques"
+        },
+        { 
+        "name": "Augmente le métabolisme énergétique"
+        }
+
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Vitamine B3",
+          "concentration": "16 mg"
+        },
+        {
+          "composanteActive": "Vitamine B5",
+          "concentration": "6 mg"
+        },
+        {
+          "composanteActive": "Vitamine B6",
+          "concentration": "1.4 mg"
+        },
+        {
+          "composanteActive": "Vitamine B1 (Thiamin)",
+          "concentration": "1.1 mg"
+        },
+        {
+          "composanteActive": "Vitamine B2 (Riboflavin)",
+          "concentration": "1.4 mg"
+        },
+        {
+          "composanteActive": "Vitamine B12",
+          "concentration": "2.5 ug"
+        },
+        {
+          "composanteActive": "Vitamine B9 (Folic Acid)",
+          "concentration": "200 ug"
+        },
+        {
+          "composanteActive": "Vitamine B8 (Biotin)",
+          "concentration": "50 ug"
+        }
+        
       ],
     "image": "/applecider.png"
     }
   ],
+
+
+
+
+
+
+
+
+
+
   "blogs": [
     {
       "title": "Blog title",

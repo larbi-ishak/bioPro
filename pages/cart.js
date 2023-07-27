@@ -72,7 +72,7 @@ const Cart = () => {
 </Button>
 </Center>
       </td>
-      <td> {item.price * item.quantity} DA</td>
+      <td> {Math.round(item.price * item.quantity)} DA</td>
     </tr>
   ));
 
