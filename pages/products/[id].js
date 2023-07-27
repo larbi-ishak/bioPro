@@ -186,7 +186,8 @@ export async function getStaticProps(context) {
   const data = products.find((product)=> product.id == id)
 
   const category = data.category;
-  const similarProds = products.filter((product)=>product.category == category)
+  console.log(category)
+  const similarProds = products.filter((product)=>product.category.every((cat)=> category.includes(cat)))
 
   return {
     props: {
