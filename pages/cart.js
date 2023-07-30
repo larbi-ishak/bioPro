@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
-import {  Badge, Table, Group, Text,  ScrollArea, createStyles,Button, Center} from '@mantine/core';
+import {  Badge, Table, Group, Text,  ScrollArea, createStyles,Button, Center, Grid} from '@mantine/core';
 import { IconTrashXFilled } from "@tabler/icons-react";
 
 const useStyles = createStyles((theme) => ({
@@ -140,7 +140,7 @@ const Cart = () => {
       <Center>
       <Text style={{fontSize: "20px"}}>Prix Total : {total_price} DA</Text>
           <br />
-        <Badge className={classes.badge}>paiement à la livraison</Badge>
+        <Badge className={classes.badge}>+ prix de livraison</Badge>
       </Center>
       <Button className={classes.button}>
       <button style={styles.buttonClear} onClick={handleClear}><IconTrashXFilled/>vider le panier</button>
@@ -150,14 +150,24 @@ const Cart = () => {
 
 
 <form action="https://formsubmit.co/larbishak2003@gmail.com" method="POST">
-        
-        <Text style={{display: "inline", }}>Nom: *</Text>
+       <Grid>
+        <Grid.Col md={4}>
+        <Text style={{display: "inline", }}>Nom: <span style={{color: "red"}}>*</span></Text>
      <input type="text" name="name" required style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
-        <Text style={{display: "inline"}}>Telephone: *</Text>
+</Grid.Col>
+        <Grid.Col md={4}>
+        <Text style={{display: "inline"}}>Telephone: <span style={{color: "red"}}>*</span></Text>
      <input type="text" name="phone" required style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
+</Grid.Col>
+        <Grid.Col md={4}>
         <Text style={{display: "inline"}}>Email:</Text>
      <input type="email" name="email" style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
-
+</Grid.Col>
+        <Grid.Col md={4}>
+        <Text style={{display: "inline"}}>Addresse: <span style={{color: "red"}}>*</span></Text>
+     <input required type="address" name="address" style={{margin: "8px",padding: "8px", borderRadius: "5px"}} />
+</Grid.Col>
+</Grid> 
      <input type="hidden" name="_subject" value="New Order!" />
      <input type="hidden" name="cart" value={JSON.stringify(cart)} />
      <input type="hidden" name="totalPrice" value={total_price} />
