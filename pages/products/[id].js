@@ -58,6 +58,7 @@ const Product = ({ id, data, similarProds }) => {
   }, []);
 
   const handle_add_to_cart = () => {
+    if (quantity >0){
     let newType = true;
     const newOrder = {
       id: data.id,
@@ -80,6 +81,7 @@ const Product = ({ id, data, similarProds }) => {
       setCart(newCart);
       localStorage.setItem("cart", JSON.stringify(newCart));
     }
+}
   };
 
   const { classes } = useStyles();

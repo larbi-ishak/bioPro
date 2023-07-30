@@ -172,9 +172,7 @@ const Cart = () => {
      <input type="hidden" name="cart" value={JSON.stringify(cart)} />
      <input type="hidden" name="totalPrice" value={total_price} />
      <input type="hidden" name="_template" value="table" />
-     {/*other email can be added to receive*/}
-     <input type="hidden" name="_cc" value="ishak.larbi@inttic.dz" />
-     {/*<input type="hidden" name="_autoresponse" value="thanks for purchasing the following products we will contact you soon to confirm your order" />*/}
+     <input type="hidden" name="_captcha" value="false"></input>
       <br />
       <Center>
      <input type="submit" value={"confirmer la commande"} style={{textDecoration: "none", outline: "none", color: "white",  backgroundColor: "#1aa078",border: "none", fontWeight: "bold", margin: "8px",padding: "14px", borderRadius: "5px"}} />
