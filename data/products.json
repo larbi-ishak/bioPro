@@ -93,7 +93,7 @@
           "concentration": "4,000 UI"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/vit_d3_4000.png"
     },
     {
       "id": 3,
@@ -132,7 +132,7 @@
           "concentration": "102 mcg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/vit_d3k2.png"
     },
     {
       "id": 4,
@@ -164,7 +164,7 @@
           "concentration": "500,000,000 UFC"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/probiotic.png"
     },
     {
       "id": 5,
@@ -196,7 +196,7 @@
           "concentration": "5,000 IU"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/vit_d3_5000.png"
     },
     {
       "id": 6,
@@ -227,11 +227,11 @@
           "concentration": "1,000 UI"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/vit_d3_1000.png"
     },
     {
       "id": 7,
-      "title": "VITAMINE D3",
+      "title": "VITAMINE D3 500 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires", "Pediatrie"] ,
       "price": 499.98,
@@ -258,7 +258,7 @@
           "concentration": "500 UI"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/vit_d3_500.png"
     },
     {
       "id": 8,
@@ -393,7 +393,7 @@
           "concentration": "55 mcg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/a-zmulti.png"
     },
     {
       "id": 9,
@@ -437,7 +437,7 @@
           "concentration": "5.5 mg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/collagene.png"
     },
     {
       "id": 10,
@@ -521,7 +521,7 @@
           "concentration": "75 ug"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/childrens.png"
     },
     {
       "id": 11,
@@ -553,7 +553,7 @@
           "concentration": "15 mg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/immunity_booster.png"
     },
     {
       "id": 12,
@@ -585,7 +585,7 @@
           "concentration": "10,000 mcg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/biotin.png"
     },
     {
       "id": 13,
@@ -623,7 +623,7 @@
           "concentration": "200 mg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/beetroot.png"
     },
     {
       "id": 14,
@@ -658,7 +658,7 @@
           "concentration": "500 mg"
         }
       ],
-    "image": "/applecider.png"
+    "image": "/maca.png"
     },
     {
       "id": 15,
@@ -698,7 +698,7 @@
         }
         
       ],
-    "image": "/applecider.png"
+    "image": "/spirulina.png"
     },
     {
       "id": 16,
@@ -734,7 +734,7 @@
         }
         
       ],
-    "image": "/applecider.png"
+    "image": "/vitc.png"
     },
     {
       "id": 17,
@@ -848,7 +848,7 @@
         }
         
       ],
-    "image": "/applecider.png"
+    "image": "/hair_skin.png"
     },
     {
       "id": 18,
@@ -913,7 +913,7 @@
         }
         
       ],
-    "image": "/applecider.png"
+    "image": "/b_complex.png"
     }
   ],
 
