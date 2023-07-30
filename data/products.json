@@ -65,7 +65,7 @@
     },
     {
       "id": 2,
-      "title": "VITAMINE D3",
+      "title": "VITAMINE D3 4,000 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires"] ,
       "price": 900.06,
@@ -168,7 +168,7 @@
     },
     {
       "id": 5,
-      "title": "VITAMINE D3",
+      "title": "VITAMINE D3 5,000 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires" , "Gynecologie"] ,
       "price": 720,
@@ -193,14 +193,14 @@
       "composantes": [
         {
           "composanteActive": "Vitamine D",
-          "concentration": "50.000 IU"
+          "concentration": "5,000 IU"
         }
       ],
     "image": "/applecider.png"
     },
     {
       "id": 6,
-      "title": "VITAMINE D3",
+      "title": "VITAMINE D3 1,000 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires", "Gynecologie"] ,
       "price": 619.99,
