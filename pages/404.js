@@ -1,12 +1,7 @@
 import { NotFoundImage } from "@/src/components/notFound";
-import { useRouter } from "next/router";
 import Head from "next/head";
 
 const Not_found = () => {
-  const router = useRouter();
-    setTimeout(() => {
-      router.push("/");
-    }, 2500);
   return (
     <>
       <Head>

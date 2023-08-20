@@ -1,11 +1,10 @@
-
-import Head from 'next/head';
-import { MantineProvider } from '@mantine/core';
+import Head from "next/head";
+import { MantineProvider } from "@mantine/core";
 import RootLayout from "@/src/layouts/routLayout";
 import Navbar from "@/src/components/navbar";
 import Footer from "@/src/components/footer";
 import "@/styles/globals.css";
-import { Demo } from '@/src/components/affix';
+import { Demo } from "@/src/components/affix";
 
 export default function App(props) {
   const { Component, pageProps } = props;
@@ -14,9 +13,9 @@ export default function App(props) {
     <>
       <Head>
         <title>Page title</title>
-                <meta charSet="UTF-8" />
-                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <MantineProvider
@@ -24,16 +23,16 @@ export default function App(props) {
         withNormalizeCSS
         theme={{
           /** Put your mantine theme override here */
-          colorScheme: 'light',
+          colorScheme: "light",
         }}
       >
-            <RootLayout>
-                <Navbar />
-                <div style={{marginTop: "80px"}}></div>
-                <Component {...pageProps} />
-                <Footer />
-            </RootLayout>
-                <Demo/>
+        <RootLayout>
+          <Navbar />
+          <div style={{ marginTop: "80px" }}></div>
+          <Component {...pageProps} />
+          <Footer />
+        </RootLayout>
+        <Demo />
       </MantineProvider>
     </>
   );
