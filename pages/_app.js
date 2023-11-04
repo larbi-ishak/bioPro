@@ -5,6 +5,7 @@ import Navbar from "@/src/components/navbar";
 import Footer from "@/src/components/footer";
 import "@/styles/globals.css";
 import { Demo } from "@/src/components/affix";
+import { useEffect } from "react";
 
 export default function App(props) {
   const { Component, pageProps } = props;
