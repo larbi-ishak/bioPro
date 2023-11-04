@@ -9,6 +9,30 @@ import { Demo } from "@/src/components/affix";
 export default function App(props) {
   const { Component, pageProps } = props;
 
+  useEffect(() => {
+    // Initialize Google Analytics
+    const script = document.createElement('script');
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-Y9DHMXBZ6N"
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config',  'G-Y9DHMXBZ6N');
+    };
+
+
+    // Remove the script tag after it has been executed to avoid re-initialization
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
+
   return (
     <>
       <Head>
