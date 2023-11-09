@@ -9,10 +9,6 @@ import { Demo } from "@/src/components/affix";
 export default function App(props) {
   const { Component, pageProps } = props;
 
-
-
-
-
   return (
     <>
       <Head>
