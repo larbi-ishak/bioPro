@@ -235,6 +235,8 @@ const Cart = () => {
           <input type="hidden" name="totalPrice" value={total_price} />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false"></input>
+          <input type="hidden" name="_autoresponse" value="your custom message" />
+          <input type="email" name="email" placeholder="Email Address"/>
           <br />
           <Center>
             <input
