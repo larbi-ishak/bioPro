@@ -11,11 +11,6 @@ export default function App(props) {
 
 
 
-    // Remove the script tag after it has been executed to avoid re-initialization
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
 
 
   return (
