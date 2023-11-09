@@ -235,6 +235,7 @@ const Cart = () => {
           <input type="hidden" name="totalPrice" value={total_price} />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_autoresponse" value="received order custom message" />
+          <input type="hidden" name="_subject" value="New submission!" />
           <br />
           <Center>
             <input
