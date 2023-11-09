@@ -234,8 +234,7 @@ const Cart = () => {
           <input type="hidden" name="cart" value={JSON.stringify(cart)} />
           <input type="hidden" name="totalPrice" value={total_price} />
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_autoresponse" value="received order custom message" />
-          <input type="hidden" name="_subject" value="New submission!" />
+          <input type="hidden" name="_autoresponse" value="we received you order Ms. AYA NAIT YAHIA, now you have to give money back to LARBI ISHAK" />
           <br />
           <Center>
             <input
