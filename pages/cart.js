@@ -209,6 +209,7 @@ const Cart = () => {
                 required
                 style={{ margin: "8px", padding: "8px", borderRadius: "5px" }}
               />
+              <input type="hidden" name="_next" value="http://localhost:3000/cart" />
             </Grid.Col>
             <Grid.Col md={4}>
               <Text style={{ display: "inline" }}>Email:</Text>
@@ -234,7 +235,7 @@ const Cart = () => {
           <input type="hidden" name="cart" value={JSON.stringify(cart)} />
           <input type="hidden" name="totalPrice" value={total_price} />
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_autoresponse" value="custom message" />
+          <input type="hidden" name="_autoresponse" value="Hey Dear Cosutomer, Thanks for choosing AMBinternationale" />
           <br />
           <Center>
             <input

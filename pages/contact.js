@@ -16,7 +16,7 @@ const Contact = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{padding: "20px"}}>
+      <div style={{ padding: "20px" }}>
         <GetInTouchSimple />
       </div>
     </>
