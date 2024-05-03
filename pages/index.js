@@ -33,17 +33,8 @@ export default function Home() {
             <main className="container">
                 <MainImg />
                 <Intro />
-                {/* <HeroText /> */}
                 <HeroImageBackground />
                 <div style={{ margin: "25px 0" }}></div>
-                {/* <StatsGridIcons data={[{ title: "PRODUITS VENDUES", value: "77", diff: 6 }, { title: "NOUVEAUX  CLIENTS", value: "77", diff: 6 }, { title: "NOUVEAUX PRODUITS", value: "77", diff: 6 }]} /> */}
-                {/* <Link href={"/contact"} style={{ textDecoration: "none" }}> */}
-                {/*     <Group position="center" mt="xl"> */}
-                {/*         <Button type="submit" size="md" className={classes.Button}> */}
-                {/*             CONTACTEZ NOUS */}
-                {/*         </Button> */}
-                {/*     </Group> */}
-                {/* </Link> */}
             </main>
         </>
     );

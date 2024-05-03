@@ -1,10 +1,9 @@
 import {
   createStyles,
-  Title,
-  Container,
+  Title, Container,
   rem,
 } from '@mantine/core';
-import { ContactIcons} from './contactIcons';
+import { ContactIcons } from './contactIcons';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -14,9 +13,8 @@ const useStyles = createStyles((theme) => ({
   header: {
     height: rem(400),
     boxSizing: 'border-box',
-    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
-      theme.colors.teal[4]
-    } 100%)`,
+    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${theme.colors.teal[4]
+      } 100%)`,
     backgroundSize: 'cover',
     display: 'flex',
     alignItems: 'flex-end',
@@ -99,8 +97,8 @@ export function FaqWithHeader() {
           AMB
         </Title>
 
-        <div className={classes.contact} style={{marginLeft: "20px"}}>
-         <ContactIcons />
+        <div className={classes.contact} style={{ marginLeft: "20px" }}>
+          <ContactIcons />
         </div>
       </div>
     </Container>
