@@ -29,6 +29,9 @@ const useStyles = createStyles((theme) => ({
   Image: {
     borderRadius: "30px",
     border: "1px solid black",
+    [theme.fn.smallerThan('xs')]: {
+      width: "350px"
+    },
   }
 }))
 
