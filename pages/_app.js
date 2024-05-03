@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import { MantineProvider } from "@mantine/core";
 import RootLayout from "@/src/layouts/routLayout";
 import Navbar from "@/src/components/navbar";
@@ -28,7 +27,6 @@ export default function App(props) {
         }}
       >
         <RootLayout>
-          <SpeedInsights />
           <Navbar />
           <div style={{ marginTop: "60px" }}></div>
           <Component {...pageProps} />
