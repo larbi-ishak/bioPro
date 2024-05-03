@@ -3,10 +3,10 @@ import { Title, Text, Container, Button, Overlay, createStyles, rem } from '@man
 const useStyles = createStyles((theme) => ({
   wrapper: {
     position: 'relative',
-    paddingTop: rem(180),
-    paddingBottom: rem(130),
+    paddingTop: rem(100),
+    paddingBottom: rem(100),
     backgroundImage:
-      'url(https://images.unsplash.com/photo-1573164713988-8665fc963095?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=980&q=80)',
+      'url(/bbb.jpg)',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
 
@@ -95,28 +95,25 @@ export function HeroImageBackground() {
 
   return (
     <div className={classes.wrapper}>
-      <Overlay color="#000" opacity={0.65} zIndex={1} />
+      <Overlay color="#000" opacity={0.25} zIndex={1} />
 
       <div className={classes.inner}>
         <Title className={classes.title}>
-          Meilleurs Produits {" "}
-          <Text component="span" inherit className={classes.highlight}>
-          Health & Beauty
-          </Text>
+          NOS PRODUITS
         </Title>
 
         <Container size={640}>
           <Text size="lg" className={classes.description}>
-          Petite discription du produits de 2 lignes
-          Petite discription du produits de 2 lignes
-          Petite discription du produits de 2 lignes
-          Petite discription du produits de 2 lignes
+            Petite discription du produits de 2 lignes
+            Petite discription du produits de 2 lignes
+            Petite discription du produits de 2 lignes
+            Petite discription du produits de 2 lignes
           </Text>
         </Container>
 
         <div className={classes.controls}>
           <Button className={classes.control} variant="white" size="lg">
-          Decouvrez nos produits
+            Pour Telecharger les Catalogues {">"}
           </Button>
         </div>
       </div>

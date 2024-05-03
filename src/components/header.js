@@ -63,12 +63,12 @@ const useStyles = createStyles((theme) => ({
     padding: `${rem(8)} ${rem(12)}`,
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
-    color:  theme.colors.dark[9] ,
+    color: theme.colors.dark[9],
     fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
     '&:hover': {
-    backgroundColor: theme.colors.teal[3]
+      color: theme.colors.teal[9]
     },
 
     [theme.fn.smallerThan('sm')]: {
@@ -79,7 +79,6 @@ const useStyles = createStyles((theme) => ({
 
   linkActive: {
     '&, &:hover': {
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.colors.teal[4] }).background,
       color: theme.colors.teal[9],
     },
   },
@@ -101,15 +100,15 @@ export function HeaderResponsive({ links }) {
         close();
       }}
     >
-       {link.label == "cart"?<><IconShoppingCartPlus style={{display: "inline", lineHeight: "30px"}}/> </>  : link.label}
+      {link.label == "cart" ? <><IconShoppingCartPlus style={{ display: "inline", lineHeight: "30px" }} /> </> : link.label}
     </Link>
   ));
 
   return (
-    <Header height={HEADER_HEIGHT}  className={classes.root} >
+    <Header height={HEADER_HEIGHT} className={classes.root} >
       <Container className={classes.header}>
-        <Link href={"/"}><Image src={"/logo.jpg"} width={50} height={50} alt='just image'/></Link>
-        
+        <Link href={"/"}><Image src={"/head_logo.png"} width={50} height={50} alt='just image' /></Link>
+
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

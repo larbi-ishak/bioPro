@@ -28,9 +28,10 @@ export default function App(props) {
       >
         <RootLayout>
           <Navbar />
-          <div style={{ marginTop: "80px" }}></div>
+          <div style={{ marginTop: "60px" }}></div>
           <Component {...pageProps} />
           <Footer />
+          <p style={{ textAlign: "center" }}>&copy; Copyright 2023 ambinternational. Tous Les Droits Sont reserves.</p>
         </RootLayout>
         <Demo />
       </MantineProvider>

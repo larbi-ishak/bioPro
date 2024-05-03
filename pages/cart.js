@@ -209,7 +209,7 @@ const Cart = () => {
                 required
                 style={{ margin: "8px", padding: "8px", borderRadius: "5px" }}
               />
-              <input type="hidden" name="_next" value="http://localhost:3000/cart" />
+              <input type="hidden" name="_next" value="https://ambinternationale.com" />
             </Grid.Col>
             <Grid.Col md={4}>
               <Text style={{ display: "inline" }}>Email:</Text>
