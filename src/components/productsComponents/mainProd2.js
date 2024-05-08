@@ -1,6 +1,5 @@
 import {
   Card,
-  Center,
   Text,
   Group,
   Badge,
@@ -37,16 +36,14 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function BadgeCard({ image, title, desc,  price, comprimes,category,id }) {
+export function VenteCard({ image, title, desc,  price, comprimes,category,id }) {
   const { classes, theme } = useStyles();
 
 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section >
-        <Center style={{marginTop:"5px"}}>
-          <Image src={image} alt={title} height={200}  style={{objectFit: "contain"}} width={200} />
-        </Center>
+        <Image src={image} alt={title} height={300}  style={{objectFit: "contain"}} width={300} />
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">
@@ -64,6 +61,8 @@ export function BadgeCard({ image, title, desc,  price, comprimes,category,id })
             Voir le porduit
             </Link>
       </Card.Section>
+
+
     </Card>
   );
 }

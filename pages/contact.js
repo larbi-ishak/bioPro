@@ -1,5 +1,7 @@
 import { GetInTouchSimple } from "@/src/components/contactCom";
+import Map from "@/src/components/map"
 import Head from "next/head";
+
 
 const Contact = () => {
   return (
@@ -19,6 +21,8 @@ const Contact = () => {
       <div style={{ padding: "20px" }}>
         <GetInTouchSimple />
       </div>
+
+      <Map />
     </>
   );
 }

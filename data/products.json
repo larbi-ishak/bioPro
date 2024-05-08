@@ -2,6 +2,7 @@
   "products": [
     {
       "id": 1,
+      "best": true,
       "title": "APPLE CIDER COMPLEX",
       "desc": "apple cider complex product for children and adults",
       "category":["Compléments Alimentaires"] ,
@@ -65,6 +66,7 @@
     },
     {
       "id": 2,
+      "best": true,
       "title": "VITAMINE D3 4,000 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires"] ,
@@ -97,6 +99,7 @@
     },
     {
       "id": 3,
+      "best": true,
       "title": "VITAMINE D3 & K2",
       "desc": "VITAMINE D3 & K2",
       "category": ["Compléments Alimentaires", "Dermatologie"] ,
@@ -136,6 +139,7 @@
     },
     {
       "id": 4,
+      "best": true,
       "title": "ACIDOPHILUS",
       "desc": "ACIDOPHILUS",
       "category": ["Compléments Alimentaires", "Gynecologie", "Pediatrie"] ,

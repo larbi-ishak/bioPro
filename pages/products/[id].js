@@ -104,12 +104,14 @@ const Product = ({ id, data, similarProds }) => {
       </Head>
     
     <div>
-      <Grid>
+      <Grid gutter={{ base: 2 }}>
+
             <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
               <Center  style={{padding: "10px", display: "block", paddingBottom: "0"}}>
                 <Image src={image} height={250} width={300} alt="just iamge" style={{objectFit: "contain"}}/>
               </Center>
             </Grid.Col>
+
             <Grid.Col md={6}>
                 <Title>{data.title}</Title>
                 <div style={styles.wrapper}>
@@ -145,7 +147,6 @@ const Product = ({ id, data, similarProds }) => {
 
                 </div>
             </Grid.Col>
-            
 
       </Grid>
 

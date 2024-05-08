@@ -3,7 +3,6 @@ import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Head from "next/head";
 
 const Events = ({ productsList }) => {
-  {/* const [products, setProducts] = useState(productsList);*/}
 
   const styles= {
     select: {
@@ -55,19 +54,21 @@ const Events = ({ productsList }) => {
       </Head>
     <div>
       <Center>
-        <h1 >Produits</h1>
+        <h1 >Collection Vitamine D3</h1>
       </Center>
 
+    <Center>
      <Grid style={{padding: "30px" }}>
         {productsList &&
           productsList.map((product) => {
             return (
-            <Grid.Col sm={4} md={2} key={product.id}>
+            <Grid.Col sm={4} md={3} key={product.id}>
               <BadgeCard {...product} />
             </Grid.Col>
             );
           })}
     </Grid>
+</Center>
     </div>
     </>
   );
@@ -76,10 +77,10 @@ const Events = ({ productsList }) => {
 export default Events;
 
 export async function getServerSideProps() {
-  const { products } = await import("../../data/products.json");
+  const { products } = await import("../../../data/products.json");
   return {
     props: {
-      productsList: products,
+      productsList: products.filter((product)=> product.title.includes("D3")),
     },
   };
 }
