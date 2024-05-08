@@ -8,6 +8,8 @@ import { ContactIcons } from './contactIcons';
 const useStyles = createStyles((theme) => ({
   wrapper: {
     paddingTop: theme.spacing.md,
+    paddingRight: "10px",
+    paddingLeft: "10px",
   },
 
   header: {
@@ -90,7 +92,7 @@ export function FaqWithHeader() {
   const { classes } = useStyles();
 
   return (
-    <Container className={classes.wrapper} size="lg">
+    <div className={classes.wrapper} >
       <div className={classes.header}>
         <Title className={classes.title}>INTERNATIONALAMB&copy;</Title>
         <Title className={classes.titleOverlay} role="presentation">
@@ -101,6 +103,6 @@ export function FaqWithHeader() {
           <ContactIcons />
         </div>
       </div>
-    </Container>
+    </div>
   );
 }

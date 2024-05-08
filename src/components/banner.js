@@ -7,7 +7,7 @@ const useStyles = createStyles((theme) => ({
     marginTop: "10px",
     paddingTop: rem(100),
     paddingBottom: rem(100),
-    backgroundColor: theme.colors.teal[7],
+    backgroundColor: theme.colors.teal[8],
     backgroundSize: 'cover',
     backgroundPosition: 'center',
 
@@ -84,16 +84,20 @@ const useStyles = createStyles((theme) => ({
   IconsContainer: {
     display: "flex",
     flexWrap: "wrap",
-    padding: "10px 70px"
+    justifyContent: "center",
+    alignItems: "center"
   },
   IconWrapper: {
 
+    color: "white",
+    textAlign: "center",
 
   },
   Icon:{
-    backgroundColor: "white",
-    border: "1px solid white",
     broderRadius: "50%",
+  },
+  IconText:{
+    marginTop: "-35px",
   },
   secondaryControl: {
     color: theme.white,
@@ -118,8 +122,20 @@ export default function Banner() {
 
         <div className={classes.IconsContainer}>
           <div className={classes.IconWrapper}>
-            <div className={classes.Icon}><Image src={"/icon4.png"} width={250} height={250} /></div>
-            <p>besoin</p>
+            <div ><Image className={classes.Icon} src={"/icon3.png"} width={250} height={250} /></div>
+            <p className={classes.IconText}>Os & Articulations</p>
+          </div>
+          <div className={classes.IconWrapper}>
+            <div ><Image className={classes.Icon} src={"/icon2.png"} width={250} height={250} /></div>
+            <p className={classes.IconText}>Beaute</p>
+          </div>
+          <div className={classes.IconWrapper}>
+            <div ><Image className={classes.Icon} src={"/icon1.png"} width={250} height={250} /></div>
+            <p className={classes.IconText}>Defenses Immunitaires</p>
+          </div>
+          <div className={classes.IconWrapper}>
+            <div ><Image className={classes.Icon} src={"/icon4.png"} width={250} height={250} /></div>
+            <p className={classes.IconText}>Energie</p>
           </div>
         </div>
       </div>

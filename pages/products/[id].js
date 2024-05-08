@@ -11,7 +11,9 @@ import Head from "next/head";
 const useStyles = createStyles((theme) => ({
     kbd: {
       fontSize: "23px",
-      color: "black"
+      color: "black",
+      fontWeight: "bold",
+      letterSpacing: "1px"
     },
 
     button: {
@@ -106,21 +108,24 @@ const Product = ({ id, data, similarProds }) => {
             <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
               <Center  style={{padding: "10px", display: "block", paddingBottom: "0"}}>
                 <Image src={image} height={250} width={300} alt="just iamge" style={{objectFit: "contain"}}/>
+              </Center>
+            </Grid.Col>
+            <Grid.Col md={6}>
                 <Title>{data.title}</Title>
                 <div style={styles.wrapper}>
-                  <Title order={5} style={{display: "inline"}}>Prix ​​unitaire:</Title> <Kbd className={classes.kbd} >{data.price} DA</Kbd>
-                 {"  "} <Title order={5} style={{display: "inline"}}><br />Quantité:</Title> <Kbd className={classes.kbd}>{quantity}</Kbd>
-                  <br />
-                  <Title order={5} style={{display: "inline"}}>PRIX TOTAL: </Title><Kbd className={classes.kbd} >{Math.round(data.price * quantity)} DA</Kbd>
-                  <Button className={classes.button} style={styles.buttonWrapper}>
-                    <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
-                  </Button>
-
-                  <Button className={classes.button} style={styles.buttonWrapper}>
-                    <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
-                  </Button>
-                  <br />
-                  {/*// TODO notification that it is added to cart*/}
+                  <div className={classes.kbd} >{data.price} DA</div>
+                  <fieldset style={{display:"inline"}}>
+                    <legend>
+                 <Title order={5} style={{display: "inline", padding: "10px 5px"}}>Quantité:</Title> 
+                    </legend>
+                        <Button className={classes.button} style={styles.buttonWrapper}>
+                          <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
+                        </Button>
+                            <Kbd className={classes.kbd}>{quantity}</Kbd>
+                        <Button className={classes.button} style={styles.buttonWrapper}>
+                          <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
+                        </Button>
+                  </fieldset>
                   <Modal opened={opened} onClose={close} withCloseButton={false}>
                   Article ajouté au panier
                   </Modal>
@@ -128,38 +133,57 @@ const Product = ({ id, data, similarProds }) => {
                     <button style={styles.button} onClick={handle_add_to_cart}>Ajouter au panier</button>{" "}
                   </Button>
 
-                  <Button className={classes.button}>
+                  <br />
+                  {/*<Title order={5} style={{display: "inline"}}>PRIX TOTAL: </Title><Kbd className={classes.kbd} >{Math.round(data.price * quantity)} DA</Kbd> */}
+                  {/*// TODO notification that it is added to cart*/}
+
+                  {/*<Button className={classes.button}>
                         <Link href={"/cart"}>
                     <button style={styles.button} onClick={handle_add_to_cart}>Commandez maintenant</button>{" "}
                         </Link>
-                  </Button>
+                  </Button> */}
+
                 </div>
-              </Center>
             </Grid.Col>
             
-            <Grid.Col md={6}>
-            <FaqWithBg data={data}/>
-            </Grid.Col>
 
       </Grid>
 
-<Divider size="sm" />
-      
-      <div style={{margin: "30px"}}>
-      <h2>Produits similaires</h2>
       <Grid >
-        {similarProds &&
-          similarProds.map((product) => {
-            return (
-            <Grid.Col md={4} key={product.id}>
-              <BadgeCard {...product} />
+            <Grid.Col sm={12} md={5} offset={1} >
+              <FaqWithBg data={data}/>
             </Grid.Col>
-            );
-          })}
-    </Grid>
-      </div>
-    </div>
+            <Grid.Col md={5}>
+              <FaqWithBg data={data}/>
+            </Grid.Col>
+      </Grid>
 
+      <section>
+        <h3>Experiences et avis</h3>
+        aucun avis sur ce produit
+        <button> ECRIRE UN AVIS</button>
+      </section>
+
+        {/*
+
+        <Divider size="sm" />
+              
+              <div style={{margin: "30px"}}>
+              <h2>Produits similaires</h2>
+              <Grid >
+                {similarProds &&
+                  similarProds.map((product) => {
+                    return (
+                    <Grid.Col md={4} key={product.id}>
+                      <BadgeCard {...product} />
+                    </Grid.Col>
+                    );
+                  })}
+            </Grid>
+              </div>
+        */}
+
+    </div>
     </>
   );
 };
@@ -198,13 +222,4 @@ export async function getStaticProps(context) {
       similarProds,
     },
   };
-}
-
-function Demo() {
-
-  return (
-    <>
-      
-    </>
-  );
 }
