@@ -1,6 +1,7 @@
 import { HeroImageBackground } from "@/src/components/indexComponents/indProd";
 import MainImg from "@/src/components/MainImg"
 import Intro from "@/src/components/intro"
+import Banner from "@/src/components/banner"
 import Head from "next/head.js";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
                 <MainImg />
                 <Intro />
                 <HeroImageBackground />
+                <Banner />
                 <div style={{ margin: "25px 0" }}></div>
             </main>
 
