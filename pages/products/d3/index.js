@@ -53,9 +53,8 @@ const Events = ({ productsList }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <div>
-      <Center>
         <h1 >Collection Vitamine D3</h1>
-      </Center>
+        <Text>  C’est la forme la plus active de vitamine D. Elle se forme dans la peau lorsque celle-ci est exposée à la lumière directe du soleil. La source alimentaire la plus commune est constituée des aliments enrichis en vitamines, principalement les céréales et les produits laitiers. La vitamine D est aussi présente dans les huiles de foie de poisson, les poissons gras, le jaune d’œuf et le foie.  </Text>
 
     <Center>
      <Grid style={{padding: "30px" }}>

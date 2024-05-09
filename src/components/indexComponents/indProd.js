@@ -1,4 +1,5 @@
 import { Title, Text, Container, Button, Overlay, createStyles, rem } from '@mantine/core';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -113,7 +114,8 @@ export function HeroImageBackground() {
 
         <div className={classes.controls}>
           <Button className={classes.control} variant="white" size="lg">
-            Pour Telecharger les Catalogues {">"}
+            <Link target='_blank' href={"https://drive.google.com/drive/folders/11q2MzbE1jRjZFbUea21dzthPXnws0vbj"} style={{textDecoration: "none", backgroundColor: "transparent"}} >Pour Telecharger les Catalogues {">"}</Link>
+            
           </Button>
         </div>
       </div>

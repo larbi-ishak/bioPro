@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button, Grid, Kbd,  Center, createStyles, Title, Divider} from "@mantine/core";
+import { Text, Button, Grid, Kbd,  Center, createStyles, Title, Divider} from "@mantine/core";
 import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Link from "next/link";
 import Image from "next/image";
@@ -26,6 +26,7 @@ const useStyles = createStyles((theme) => ({
 }))
 const Product = ({ id, data, similarProds }) => {
   const [opened, { open, close }] = useDisclosure(false);
+  const [ImgOpened, { ImgOpen, ImgClose }] = useDisclosure(false);
 
   const styles={
     button: {
@@ -110,6 +111,12 @@ const Product = ({ id, data, similarProds }) => {
               <Center  style={{padding: "10px", display: "block", paddingBottom: "0"}}>
                 <Image src={image} height={250} width={300} alt="just iamge" style={{objectFit: "contain"}}/>
               </Center>
+
+                  <Modal opened={ImgOpened} onClose={ImgClose} withCloseButton={false}>
+                    sdfasd
+                <Image src={image} height={350} width={400} alt="just iamge" style={{objectFit: "contain"}}/>
+                  </Modal>
+                  <Button className={classes.button} onClick={ImgOpen} style={styles.buttonWrapper}>Agrandir</Button>
             </Grid.Col>
 
             <Grid.Col md={6}>
@@ -135,6 +142,11 @@ const Product = ({ id, data, similarProds }) => {
                     <button style={styles.button} onClick={handle_add_to_cart}>Ajouter au panier</button>{" "}
                   </Button>
 
+                  <Divider></Divider>
+                     <Text>Habituellement expédiée sous 24h</Text>
+                    <Text>Livraison standard offerte</Text>
+                      <Text>Retour facile </Text>
+
                   <br />
                   {/*<Title order={5} style={{display: "inline"}}>PRIX TOTAL: </Title><Kbd className={classes.kbd} >{Math.round(data.price * quantity)} DA</Kbd> */}
                   {/*// TODO notification that it is added to cart*/}
@@ -155,7 +167,17 @@ const Product = ({ id, data, similarProds }) => {
               <FaqWithBg data={data}/>
             </Grid.Col>
             <Grid.Col md={5}>
-              <FaqWithBg data={data}/>
+            <h1>Besoins alimentaires</h1>
+            <p>Vegan</p>
+            <p>Végétarien</p>
+            <p>Sans gluten</p>
+<h2>Besoin d’aide ?</h2>
+<Text>
+Solgar met à votre disposition une équipe de conseillers
+qui répond à toutes vos questions.
+Informations
+</Text>
+<Link href={"/contact"}>Contactez-nous</Link>
             </Grid.Col>
       </Grid>
 

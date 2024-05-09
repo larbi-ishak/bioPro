@@ -1,4 +1,4 @@
-import { Text, Grid, Center} from "@mantine/core";
+import { Text, Grid, Center, Button} from "@mantine/core";
 import { VenteCard } from "@/src/components/productsComponents/mainProd2";
 import Head from "next/head";
 import { CardsCarousel } from "@/src/components/carousel";
@@ -68,46 +68,54 @@ const Events = ({ bestSelling }) => {
             </Grid>
             <Grid>
                     <Grid.Col sm={10} offset={1} md={5}>
-                        <Image src={""} width={500} height={500} />
+                        <Image src={"/VIT_D.jpg"} style={{borderRadius: "32px"}} width={500} height={380} />
                     </Grid.Col>
                     <Grid.Col sm={10} md={5}>
-                        Text
+                      <h1>DÉCOUVREZ Les Vitamines D3 a plusieurs dosages  </h1>
+                    <p>Dosée à 500,1000,4000,50.000 UI par comprimé, elles est très agréable à utiliser au quotidien. La vitamine D contribue au fonctionnement normal du système immunitaire. Elles contribue également à maintenir une ossature et une fonction musculaire normale.</p>
+                    <Link href={"/products/d3"}>Découvrir le produit</Link>
                     </Grid.Col>
             </Grid>
 
             <Grid>
                     <Grid.Col offset={1} sm={10} md={5}>
-                        Text
+                    <h1>apple cider complex newgate </h1>
+                    <p>lorem ipsum </p>
+                    <Link href={"/products/1"}>Découvrir le produit</Link>
                     </Grid.Col>
                     <Grid.Col sm={10}  md={5}>
-                        <Image src={""} width={500} height={500} />
+                        <Image src={"/appl2.jpg"} width={500} height={500} />
                     </Grid.Col>
             </Grid>
 
             <section styles={styles.banner}>
-                Banner
+            LA MAJORITÉ DE NOS PRODUITS SONT
                 <Grid style={styles.bannerContent}>
-                    <Grid.Col span={2}>Image<br />text</Grid.Col>
-                    <Grid.Col span={2}>Image<br />text</Grid.Col>
-                    <Grid.Col span={2}>Image<br />text</Grid.Col>
-                    <Grid.Col span={2}>Image<br />text</Grid.Col>
-                    <Grid.Col span={2}>Image<br />text</Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180} /><br />SANS OGM</Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon2.png"} width={180} height={180} /><br />VÉGÉTALIEN</Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon3.png"} width={180} height={180} /><br /> SANS GLUTEN</Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon4.png"} width={180} height={180} /><br />SANS PRODUITS LAITIERS</Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180} /><br />HALAL</Grid.Col>
                 </Grid>
             </section>
 
-            <Center> <h3>Title</h3> </Center>
-            <Center> <Text>small content</Text> </Center>
+            <Center> <h1>Découvrez nos offres du moment</h1> </Center>
+            <Center> <Text>Profitez de nos promotions pour essayer quelque chose de nouveau!</Text> </Center>
 
             <Grid>
-                    <Grid.Col offset={1} sm={10}  md={5}>
-                        <Image src={""} width={500} height={500} />
-                        <Text>Text</Text>
+                    <Grid.Col style={{border: "1px solid #ccc"}} offset={1} sm={10}  md={4}>
+                      <Center>
+                        <Image src={"/NG.jpg"} width={350} height={350} />
+</Center>
+                        <h1>DISPONNIBLE DANS LES PHARMACIES </h1>
                     </Grid.Col>
-                    <Grid.Col sm={10}  md={5}>
-                        <Image src={""} width={500} height={500} />
-                        <Text>asdfasdf</Text>
-                        <Text>asdfasdf</Text>
-                        <Link href={"/products/1"}>asdf</Link>
+                    <Grid.Col style={{border: "1px solid #ccc"}} offset={1} sm={10}  md={4}>
+                      <Center>
+                        <Image src={"/az3.jpg"} width={350} height={350} />
+</Center>
+                        <h1>nos Meilleurs ventes</h1>
+                        <Text>Découvrez vos produits préférés dès maintenant sur notre site</Text>
+                        <Link href={"/products/8"}>Découvrir</Link>
                     </Grid.Col>
             </Grid>
         </div>

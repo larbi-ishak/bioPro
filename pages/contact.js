@@ -1,5 +1,4 @@
 import { GetInTouchSimple } from "@/src/components/contactCom";
-import Map from "@/src/components/map"
 import Head from "next/head";
 
 
@@ -22,7 +21,18 @@ const Contact = () => {
         <GetInTouchSimple />
       </div>
 
-      <Map />
+
+<div style={{margin: "20px"}}>
+
+<iframe
+    loading="lazy"
+    src="https://maps.google.com/maps?q=amb+international+Misserghin&z=17&t=m&output=embed"
+    width="100%"
+    height="450"
+    allowfullscreen=""
+></iframe>
+
+</div>
     </>
   );
 }
