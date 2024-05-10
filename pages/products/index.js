@@ -1,4 +1,4 @@
-import { Text, Grid, Center} from "@mantine/core";
+import { Text, Grid, Center, Divider} from "@mantine/core";
 import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Head from "next/head";
 
@@ -53,11 +53,10 @@ const Events = ({ productsList }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <div>
-      <Center>
-        <h1 >Produits</h1>
-      </Center>
+    <div style={{margin:"80px"}}>
+      <h2 style={{marginTop: "20px",marginBottom:"10px", color: "#937b44"}}>NOS PRODUITS</h2>
 
+<Divider />
      <Grid style={{padding: "30px" }}>
         {productsList &&
           productsList.map((product) => {

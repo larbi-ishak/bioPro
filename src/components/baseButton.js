@@ -9,6 +9,7 @@ const useStyles = createStyles((theme) => ({
     fontWeight: "bold",
     textTransform: "uppercase",
     padding: "15px 40px",
+    lineBreak: "initial"
   },
 }));
 
@@ -17,7 +18,7 @@ export default function BaseButton({ link, text}) {
 
   return (
     <>
-    <div style={{marginLeft: "15px", marginTop: "20px"}}>
+    <div style={{marginLeft: "10px", marginTop: "20px"}}>
         <Link className={classes.Link} href={link}>{text}</Link>
 </div>
     </>

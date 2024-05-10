@@ -1,4 +1,4 @@
-import { Text, Grid, Center, Button} from "@mantine/core";
+import { createStyles, Text, Grid, Center, Button} from "@mantine/core";
 import BaseButton from "@/src/components/baseButton";
 import { VenteCard } from "@/src/components/productsComponents/mainProd2";
 import Head from "next/head";
@@ -6,7 +6,34 @@ import { CardsCarousel } from "@/src/components/carousel";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
+const useStyles = createStyles((theme) => ({
+  banner: {
+    marginTop: "20px",
+    color:"white",
+    width: "100%",
+    backgroundColor: "#5f594f",
+    height: "350px",
+  },
+  IcoText: {
+    fontWeight: "300",
+    letterSpacing: "1px",
+    marginLeft: "10px",
+    marginTop: '-20px',
+  },
+  bannerContent:{
+    margin:"5px auto",
+    width: "1000px"
+  }
+}));
+
+
+
+
+
 const Events = ({ bestSelling }) => {
+  const { classes, theme } = useStyles();
 
   const styles= {
     select: {
@@ -16,14 +43,6 @@ const Events = ({ bestSelling }) => {
       display: "inline",
       marginLeft: "10px",
       fontWeight: "600",
-    },
-    banner: {
-        backgroundColor: "#ccc",
-        height: "150px",
-    },
-    bannerContent: {
-        width: "700px",
-        margin: "20px auto"
     },
     option: {
       fontWeight: "600",
@@ -69,7 +88,7 @@ const Events = ({ bestSelling }) => {
             </Grid>
             <Grid>
                     <Grid.Col sm={10} offset={1} md={5}>
-                        <Image src={"/VIT_D.jpg"} style={{borderRadius: "32px"}} width={500} height={380} />
+                        <Image src={"/VIT_D.jpg"} style={{borderRadius: "32px"}}   objectFit={"contain"} width={500} height={380} />
                     </Grid.Col>
                     <Grid.Col style={{margin: "50px"}} sm={10} md={5}>
                       <h2>DÉCOUVREZ Les Vitamines D3 a plusieurs dosages  </h2>
@@ -80,26 +99,32 @@ const Events = ({ bestSelling }) => {
             </Grid>
 
             <Grid style={{marginTop: "20px"}}>
-                    <Grid.Col style={{paddingLeft: "50px",display: "flex", justifyContent:"center", flexDirection: "column"}} offset={1} sm={10} md={5}>
+                    <Grid.Col style={{paddingLeft: "30px",display: "flex", justifyContent:"center", flexDirection: "column"}} offset={1} sm={10} md={5}>
                     <h1 style={{textTransform: "uppercase"}}>Apple Cider Complex<br /> Newgate </h1>
                     <p>lorem ipsum </p>
                     <BaseButton link={"/products/1"} text={"Découvrir le produit"} />
                     </Grid.Col>
                     <Grid.Col sm={10}  md={5}>
-                        <Image src={"/appl2.jpg"} width={500} height={500} />
+                        <Image src={"/appl2.jpg"} width={500} height={500}  objectFit={"contain"}/>
                     </Grid.Col>
             </Grid>
 
-            <section styles={styles.banner}>
-            LA MAJORITÉ DE NOS PRODUITS SONT
-                <Grid style={styles.bannerContent}>
-                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180} /><br />SANS OGM</Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon2.png"} width={180} height={180} /><br />VÉGÉTALIEN</Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon3.png"} width={180} height={180} /><br /> SANS GLUTEN</Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon4.png"} width={180} height={180} /><br />SANS PRODUITS LAITIERS</Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180} /><br />HALAL</Grid.Col>
+            <section className={classes.banner}>
+              <Center>
+                <h4 style={{marginTop: "30px"}}>
+                  LA MAJORITÉ DE NOS PRODUITS SONT
+                </h4>
+              </Center>
+              <Center>
+                <Grid className={classes.bannerContent}>
+                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180} objectFit={"contain"} /><br /><Center className={classes.IcoText}>SANS OGM</Center></Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon2.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>VÉGÉTALIEN</Center></Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon3.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>SANS GLUTEN</Center></Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon4.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>SANS PRODUITS LAITIERS</Center></Grid.Col>
+                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>HALAL</Center></Grid.Col>
                 </Grid>
-            </section>
+              </Center>
+              </section>
 
           <section style={{margin: "40px 0", textTransform: "uppercase"}}>
             <Center> <h2>Découvrez nos offres du moment</h2> </Center>

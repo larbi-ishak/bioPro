@@ -1,4 +1,4 @@
-import { Text, Grid, Center} from "@mantine/core";
+import { Text, Grid, Center, Divider} from "@mantine/core";
 import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Head from "next/head";
 
@@ -52,12 +52,13 @@ const Events = ({ productsList }) => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <div>
-        <h1 >Collection Vitamine D3</h1>
-        <Text>  C’est la forme la plus active de vitamine D. Elle se forme dans la peau lorsque celle-ci est exposée à la lumière directe du soleil. La source alimentaire la plus commune est constituée des aliments enrichis en vitamines, principalement les céréales et les produits laitiers. La vitamine D est aussi présente dans les huiles de foie de poisson, les poissons gras, le jaune d’œuf et le foie.  </Text>
+    <div style={{margin: '80px'}}>
+      <h2 style={{marginTop: "20px",marginBottom:"10px", color: "#937b44"}}>Collection Vitamine D3</h2>
+      <Text style={{marginBottom: "10px"}}>  C’est la forme la plus active de vitamine D. Elle se forme dans la peau lorsque celle-ci est exposée à la lumière directe du soleil. La source alimentaire la plus commune est constituée des aliments enrichis en vitamines, principalement les céréales et les produits laitiers. La vitamine D est aussi présente dans les huiles de foie de poisson, les poissons gras, le jaune d’œuf et le foie.  </Text>
 
+    <Divider />
     <Center>
-     <Grid style={{padding: "30px" }}>
+     <Grid style={{padding: "30px"}}>
         {productsList &&
           productsList.map((product) => {
             return (
