@@ -27,6 +27,9 @@ const useStyles = createStyles((theme) => ({
   badge: {
     color: theme.colors.teal[9],
   },
+  btnClear: {
+      backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[4]} 0%, ${theme.colors.teal[4]} 100%)`,
+  }
 }));
 
 const Cart = () => {
@@ -44,7 +47,6 @@ const Cart = () => {
     },
     buttonClear: {
       padding: " 4px 20px",
-      backgroundColor: "transparent",
       textDecoration: "none",
       color: "white",
       border: "none",
@@ -176,18 +178,20 @@ const Cart = () => {
           <br />
           <Badge className={classes.badge}>+ prix de livraison</Badge>
         </Center>
+        <div style={{display: "flex", justifyContent: "flex-end", marginRight: "50px"}}>
         <Button className={classes.button}>
-          <button style={styles.buttonClear} onClick={handleClear}>
+          <button style={styles.buttonClear} className={classes.btnClear} onClick={handleClear}>
             <IconTrashXFilled />
             vider le panier
           </button>
         </Button>
+</div>
 
         <form
           action="https://formsubmit.co/larbishak2003@gmail.com"
           method="POST"
         >
-          <Grid>
+          <Grid style={{margin: "2px auto", width: "800px"}}>
             <Grid.Col md={4}>
               <Text style={{ display: "inline" }}>
                 Nom: <span style={{ color: "red" }}>*</span>
@@ -212,14 +216,6 @@ const Cart = () => {
               <input type="hidden" name="_next" value="https://ambinternationale.com" />
             </Grid.Col>
             <Grid.Col md={4}>
-              <Text style={{ display: "inline" }}>Email:</Text>
-              <input
-                type="email"
-                name="email"
-                style={{ margin: "8px", padding: "8px", borderRadius: "5px" }}
-              />
-            </Grid.Col>
-            <Grid.Col md={4}>
               <Text style={{ display: "inline" }}>
                 Addresse: <span style={{ color: "red" }}>*</span>
               </Text>
@@ -227,6 +223,14 @@ const Cart = () => {
                 required
                 type="address"
                 name="address"
+                style={{ margin: "8px", padding: "8px", borderRadius: "5px" }}
+              />
+            </Grid.Col>
+            <Grid.Col md={4}>
+              <Text style={{ display: "inline" }}>Email:</Text>
+              <input
+                type="email"
+                name="email"
                 style={{ margin: "8px", padding: "8px", borderRadius: "5px" }}
               />
             </Grid.Col>

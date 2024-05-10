@@ -7,6 +7,7 @@ import { FaqWithBg } from "@/src/components/productsComponents/fqa";
 import { useDisclosure } from '@mantine/hooks';
 import { Modal } from '@mantine/core';
 import Head from "next/head";
+import AgrandirImg from "@/src/components/ProdImgAgr";
 
 const useStyles = createStyles((theme) => ({
     kbd: {
@@ -26,7 +27,6 @@ const useStyles = createStyles((theme) => ({
 }))
 const Product = ({ id, data, similarProds }) => {
   const [opened, { open, close }] = useDisclosure(false);
-  const [ImgOpened, { ImgOpen, ImgClose }] = useDisclosure(false);
 
   const styles={
     button: {
@@ -108,15 +108,7 @@ const Product = ({ id, data, similarProds }) => {
       <Grid gutter={{ base: 2 }}>
 
             <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
-              <Center  style={{padding: "10px", display: "block", paddingBottom: "0"}}>
-                <Image src={image} height={250} width={300} alt="just iamge" style={{objectFit: "contain"}}/>
-              </Center>
-
-                  <Modal opened={ImgOpened} onClose={ImgClose} withCloseButton={false}>
-                    sdfasd
-                <Image src={image} height={350} width={400} alt="just iamge" style={{objectFit: "contain"}}/>
-                  </Modal>
-                  <Button className={classes.button} onClick={ImgOpen} style={styles.buttonWrapper}>Agrandir</Button>
+              <AgrandirImg image={image}/>
             </Grid.Col>
 
             <Grid.Col md={6}>

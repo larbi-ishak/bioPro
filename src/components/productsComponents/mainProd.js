@@ -60,7 +60,7 @@ export function BadgeCard({ image, title, desc,  price, comprimes,category,id })
                   <Text> {comprimes} </Text>
                   <Text fz="lg" fw={800}> {price} DA</Text>
         </Card.Section>
-            <Link href={`/products/${id}`} style={{marginTop: "5px",textDecoration: "underline", color: "black"}}>
+            <Link href={`/products/${id}`} style={{marginTop: "5px",textDecoration: "underline", color: "#937b44"}}>
             Voir le porduit
             </Link>
       </Card.Section>

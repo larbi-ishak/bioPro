@@ -29,7 +29,6 @@ const useStyles = createStyles((theme) => ({
     paddingLeft: theme.spacing.md,
     paddingRight: theme.spacing.md,
     color: theme.white,
-    marginBottom: theme.spacing.xs,
     textAlign: 'center',
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
@@ -88,16 +87,15 @@ const useStyles = createStyles((theme) => ({
     alignItems: "center"
   },
   IconWrapper: {
-
     color: "white",
     textAlign: "center",
-
   },
   Icon:{
     broderRadius: "50%",
   },
   IconText:{
     marginTop: "-35px",
+    fontWeight:"700"
   },
   secondaryControl: {
     color: theme.white,
@@ -127,15 +125,15 @@ export default function Banner() {
           </div>
           <div className={classes.IconWrapper}>
             <div ><Image className={classes.Icon} src={"/icon2.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Beaute</p>
+            <p className={classes.IconText}>Beauté</p>
           </div>
           <div className={classes.IconWrapper}>
             <div ><Image className={classes.Icon} src={"/icon1.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Defenses Immunitaires</p>
+            <p className={classes.IconText}>Défenses immunitaires</p>
           </div>
           <div className={classes.IconWrapper}>
             <div ><Image className={classes.Icon} src={"/icon4.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Energie</p>
+            <p className={classes.IconText}>Énergie</p>
           </div>
         </div>
       </div>

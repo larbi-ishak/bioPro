@@ -1,7 +1,7 @@
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
-import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '@mantine/core';
-import Link from 'next/link';
+import { createStyles, Paper, useMantineTheme, rem } from '@mantine/core';
+import BaseButton from './baseButton';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -13,7 +13,22 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
-
+  CarouselTxtWrapper: {
+    marginLeft: "150px",
+    marginTop: "60px",
+  },
+  CarouselText: {
+    fontWeight: "1000",
+    fontSize: "2rem",
+    lineHeight: "32px",
+    textTransform: "uppercase",
+    letterSpacing: "2px",
+    color: `${theme.colors.teal[9]}`,
+  },
+  button: {
+    lineHeight: "52px",
+    marginTop: "20px",
+  },
   title: {
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
@@ -43,10 +58,9 @@ function Card({ image, title}) {
       sx={{ backgroundImage: `url(${image})` }}
       className={classes.card}
     >
-      <div>
-        {/* <Title order={3} className={classes.title}> {title} </Title>*/}
-        <h3 className={classes.CarouselText}>renforcer votre<br />immunite avec newgate</h3>
-        <Link className={classes.CarouselBtn} href={"/products"}>je decouvre</Link>
+      <div className={classes.CarouselTxtWrapper}>
+        <h3 className={classes.CarouselText}>renforcer votre<br />immunité avec newgate</h3>
+        <BaseButton link={"/products"} className={classes.button} text={"je découvre"} />
       </div>
     </Paper>
   );

@@ -1,4 +1,5 @@
 import { Title, Text, Container, Button, Overlay, createStyles, rem } from '@mantine/core';
+import { calculateSizeAdjustValues } from 'next/dist/server/font-utils';
 import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
@@ -53,7 +54,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   controls: {
-    marginTop: `calc(${theme.spacing.xl} * 1.5)`,
+    marginTop: `calc(${theme.spacing.xl} * 1.9)`,
     display: 'flex',
     justifyContent: 'center',
     paddingLeft: theme.spacing.md,
@@ -64,6 +65,9 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
+  button: {
+    color: theme.colors.teal[7],
+  },
   control: {
     color: theme.colors.teal[7],
     height: rem(42),
@@ -114,8 +118,7 @@ export function HeroImageBackground() {
 
         <div className={classes.controls}>
           <Button className={classes.control} variant="white" size="lg">
-            <Link target='_blank' href={"https://drive.google.com/drive/folders/11q2MzbE1jRjZFbUea21dzthPXnws0vbj"} style={{textDecoration: "none", backgroundColor: "transparent"}} >Pour Telecharger les Catalogues {">"}</Link>
-            
+            <Link className={classes.button} target='_blank' href={"https://drive.google.com/drive/folders/11q2MzbE1jRjZFbUea21dzthPXnws0vbj"} style={{textDecoration: "none", backgroundColor: "transparent"}} >Pour Telecharger les Catalogues {">"}</Link>
           </Button>
         </div>
       </div>

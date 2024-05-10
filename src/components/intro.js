@@ -5,7 +5,7 @@ const useStyles = createStyles((theme) => ({
 
   wrapper: {
     display: "flex",
-    margin: "40px 40px",
+    margin: "20px 40px",
     justifyContent: "space-around",
     gap: "30px",
 
@@ -13,7 +13,6 @@ const useStyles = createStyles((theme) => ({
       display: "block",
       margin: "20px 10px"
     },
-
 
   },
   text: {
@@ -43,11 +42,11 @@ const Intro = () => {
         <h2><span className={classes.green}>AMB</span> INTERNATIONAL</h2>
         <h4>Qui sommes-nous?</h4>
         <p className={classes.content}>
-          Nos sites de fabrication repondent aux normes de production et exigencs mondiales, certifees BFP(Bonnes Pratiques DE Fabrication) . Ils ont soumis regulirement a des inspection par les autorites de sante. Savoir-faire, experience, qualitie, reactivite, sont a la base de ces resultats rapides et exemplaires
+          Nos sites de fabrication répondent aux normes de production et aux exigences mondiales, certifiées BFP ( Bonnes Pratiques De Fabrication ) . Ils sont soumis régulièrement à des inspections par les autorités de santé. Savoir-faire, expérience, qualité, réactivité, sont à la base de ces résultats rapides et exemplaires.
         </p>
       </div>
       <div className={classes.imgWrapper}>
-        <Image className={classes.Image} src="/bbb.jpg" width={400} height={250} alt="justimge" />
+        <Image className={classes.Image} src="/bbb.jpg" width={450} height={280} alt="justimge" />
 
       </div>
 

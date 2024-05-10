@@ -65,6 +65,7 @@ const useStyles = createStyles((theme) => ({
 
   control: {
     color: "white",
+    textTransform: "uppercase",
     height: rem(42),
     lineHeight: rem(42),
     fontSize: theme.fontSizes.md,
@@ -102,7 +103,7 @@ function MainImg() {
       <div className={classes.inner}>
         <div className={classes.controls}>
           <Button onClick={ScrollDown} className={classes.control} size="lg">
-            DECOUVRIR
+            Découvrir
           </Button>
         </div>
       </div>
