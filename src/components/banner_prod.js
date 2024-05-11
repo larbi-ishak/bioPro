@@ -89,9 +89,18 @@ const useStyles = createStyles((theme) => ({
   },
   Icon:{
     broderRadius: "50%",
+    [theme.fn.smallerThan('sm')]: {
+      width:"100px",
+      height:"100px",
+    },
   },
   IconText:{
     marginTop: "-35px",
+    [theme.fn.smallerThan('sm')]: {
+      marginTop: "-15px",
+      fontWeight:"400",
+      fontSize: "12px"
+    },
     fontWeight:"700"
   },
   secondaryControl: {

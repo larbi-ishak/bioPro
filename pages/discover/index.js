@@ -10,10 +10,23 @@ import BannerProd from "@/src/components/banner_prod";
 
 
 const useStyles = createStyles((theme) => ({
+  Wrapper: {
+    [theme.fn.smallerThan("sm")]: {
+      margin: "0px",
+    },
+  },
   imgSized: {
     [theme.fn.smallerThan("sm")]: {
       width: "200px",
       height: "200px",
+
+    },
+  },
+  Img: {
+    [theme.fn.smallerThan("xs")]: {
+      width: "230px",
+      height: "230px",
+      marginTop: "20px",
 
     },
   },
@@ -69,7 +82,7 @@ const Discover = ({ bestSelling }) => {
       </Head>
     <div>
         <CardsCarousel />
-        <div style={styles.wrapper}>
+        <div style={styles.wrapper} className={classes.Wrapper}>
             <h2 style={{marginTop: "20px", color: "#937b44"}}>NOS MEILLEURS VENTES</h2>
             <Grid style={{padding: "30px" }}>
                 {bestSelling &&
@@ -81,28 +94,29 @@ const Discover = ({ bestSelling }) => {
                     );
                 })}
             </Grid>
-            <Grid>
-                    <Grid.Col sm={10} offset={1} md={5}>
-                        <Image src={"/VIT_D.jpg"} style={{borderRadius: "32px"}}   objectFit={"contain"} width={500} height={380} />
-                    </Grid.Col>
-                    <Grid.Col style={{margin: "50px"}} sm={10} md={5}>
-                      <h2>DÉCOUVREZ Les Vitamines D3 a plusieurs dosages  </h2>
-                    <p>Dosée à 500,1000,4000,50.000 UI par comprimé, elles est très agréable à utiliser au quotidien. La vitamine D contribue au fonctionnement normal du système immunitaire. Elles contribue également à maintenir une ossature et une fonction musculaire normale.</p>
-                    <Link href={"/products/d3"}></Link>
-        <BaseButton link={"/products/d3"}  text={"Découvrir le produit"} />
-                    </Grid.Col>
-            </Grid>
 
-            <Grid style={{marginTop: "20px"}}>
-                    <Grid.Col style={{paddingLeft: "30px",display: "flex", justifyContent:"center", flexDirection: "column"}} offset={1} sm={10} md={5}>
-                    <h1 style={{textTransform: "uppercase"}}>Apple Cider Complex<br /> Newgate </h1>
-                    <p>lorem ipsum </p>
-                    <BaseButton link={"/products/1"} text={"Découvrir le produit"} />
-                    </Grid.Col>
-                    <Grid.Col sm={10}  md={5}>
-                        <Image src={"/appl2.jpg"} width={500} height={500}  objectFit={"contain"}/>
-                    </Grid.Col>
-            </Grid>
+
+                  <section style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
+                    <Image src={"/VIT_D.jpg"} style={{borderRadius: "32px"}}    width={500} height={380} className={classes.Img} />
+                    <div style={{margin: "20px", width: "400px"}}>
+                          <h2>DÉCOUVREZ Les Vitamines D3 a plusieurs dosages  </h2>
+                        <p>Dosée à 500,1000,4000,50.000 UI par comprimé, elles est très agréable à utiliser au quotidien. <br /> La vitamine D contribue au fonctionnement normal du système immunitaire. Elles contribue également à maintenir une ossature et une fonction musculaire normale.</p>
+                        <Link href={"/products/d3"}></Link>
+                        <BaseButton link={"/products/d3"}  text={"Découvrir"} />
+                    </div>
+
+                  </section>
+
+                    <div style={{display: "flex",justifyContent:"space-around", flexWrap: "wrap", marginTop: "20px"}}>
+                      <div style={{paddingLeft: "30px",display: "flex", justifyContent:"center", flexDirection: "column"}} >
+                        <h1 style={{textTransform: "uppercase"}}>Apple Cider Complex<br /> Newgate </h1>
+                        <p>lorem ipsum </p>
+                        <BaseButton link={"/products/1"} text={"Découvrir"} style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis"}} />
+                        </div>
+                        <div >
+                            <Image src={"/appl2.jpg"} style={{marginTop: "15px"}} className={classes.Img} width={500} height={500}/>
+                        </div>
+                    </div>
 
             <BannerProd />
 
@@ -110,6 +124,7 @@ const Discover = ({ bestSelling }) => {
             <Center> <h2>Découvrez nos offres du moment</h2> </Center>
             <Center> <Text>Profitez de nos promotions pour essayer quelque chose de nouveau!</Text> </Center>
           </section>
+
             <Grid>
                     <Grid.Col style={{border: "1px solid #ccc", padding: "40px", marginBottom: "10px"}} offset={1} sm={10}  md={4}>
                       <Center>
