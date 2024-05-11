@@ -61,7 +61,7 @@ const Events = ({ productsList }) => {
         {productsList &&
           productsList.map((product) => {
             return (
-            <Grid.Col sm={4} md={2} key={product.id}>
+            <Grid.Col xs={3} sm={4} md={2} key={product.id}>
               <BadgeCard {...product} />
             </Grid.Col>
             );

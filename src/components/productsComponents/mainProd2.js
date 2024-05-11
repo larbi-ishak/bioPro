@@ -2,6 +2,7 @@ import {
   Card,
   Text,
   Group,
+  Center,
   Badge,
   Button,
   createStyles,
@@ -43,7 +44,9 @@ export function VenteCard({ image, title, desc,  price, comprimes,category,id })
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section >
-        <Image src={image} alt={title} height={250}  style={{objectFit: "contain", marginTop: "15px"}} width={250} />
+        <Center>
+          <Image src={image} alt={title} height={250}  style={{objectFit: "contain", marginTop: "15px"}} width={250} />
+        </Center>
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">

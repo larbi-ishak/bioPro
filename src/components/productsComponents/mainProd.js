@@ -15,6 +15,12 @@ const useStyles = createStyles((theme) => ({
   card: {
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
   },
+  Image:{
+    [theme.fn.smallerThan('sm')]: {
+        width: "180px",
+        height: "180px",
+    }
+  },
 
   section: {
     borderBottom: `${rem(1)} solid ${
@@ -45,7 +51,7 @@ export function BadgeCard({ image, title, desc,  price, comprimes,category,id })
     <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section >
         <Center style={{marginTop:"5px"}}>
-          <Image src={image} alt={title} height={200}  style={{objectFit: "contain"}} width={200} />
+          <Image className={classes.Image} src={image} alt={title} height={200}  style={{objectFit: "contain"}} width={200} />
         </Center>
       </Card.Section>
 

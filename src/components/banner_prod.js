@@ -7,7 +7,7 @@ const useStyles = createStyles((theme) => ({
     marginTop: "10px",
     paddingTop: rem(100),
     paddingBottom: rem(100),
-    backgroundColor: theme.colors.teal[8],
+    backgroundColor: "#5f594f",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
 
@@ -24,17 +24,14 @@ const useStyles = createStyles((theme) => ({
 
   title: {
     fontWeight: 800,
-    fontSize: rem(40),
+    fontSize: rem(20),
     letterSpacing: rem(-1),
-    paddingLeft: theme.spacing.md,
-    paddingRight: theme.spacing.md,
     color: theme.white,
     textAlign: 'center',
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 
     [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(28),
-      textAlign: 'left',
+      fontSize: rem(16),
     },
   },
 
@@ -107,7 +104,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function Banner() {
+export default function BannerProd() {
   const { classes} = useStyles();
 
   return (
@@ -116,26 +113,30 @@ export default function Banner() {
       <div className={classes.inner}>
         <Title className={classes.title}>
           <Center>
-            Vos besoins
+            LA MAJORITÉ DE NOS PRODUITS SONT
           </Center>
         </Title>
 
         <div className={classes.IconsContainer}>
           <div className={classes.IconWrapper}>
-            <div ><Image className={classes.Icon} src={"/icon3.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Os & Articulations</p>
+            <div ><Image className={classes.Icon} src={"/feature1.png"} width={200} height={200} /></div>
+            <p className={classes.IconText}>SANS PRODUITS LAITIERS </p>
           </div>
           <div className={classes.IconWrapper}>
-            <div ><Image className={classes.Icon} src={"/icon2.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Beauté</p>
+            <div ><Image className={classes.Icon} src={"/feature2.png"} width={200} height={200} /></div>
+            <p className={classes.IconText}>VÉGÉTALIEN</p>
           </div>
           <div className={classes.IconWrapper}>
-            <div ><Image className={classes.Icon} src={"/icon1.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Défenses immunitaires</p>
+            <div ><Image className={classes.Icon} src={"/feature3.png"} width={200} height={200} /></div>
+            <p className={classes.IconText}>SANS GLUTEN </p>
           </div>
           <div className={classes.IconWrapper}>
-            <div ><Image className={classes.Icon} src={"/icon4.png"} width={250} height={250} /></div>
-            <p className={classes.IconText}>Énergie</p>
+            <div ><Image className={classes.Icon} src={"/feature4.png"} width={200} height={200} /></div>
+            <p className={classes.IconText}>SANS OGM </p>
+          </div>
+          <div className={classes.IconWrapper}>
+            <div ><Image className={classes.Icon} src={"/feature5.png"} width={200} height={200} /></div>
+            <p className={classes.IconText}>HALAL</p>
           </div>
         </div>
       </div>

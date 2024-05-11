@@ -5,16 +5,17 @@ import Head from "next/head";
 import { CardsCarousel } from "@/src/components/carousel";
 import Image from "next/image";
 import Link from "next/link";
+import BannerProd from "@/src/components/banner_prod";
 
 
 
 const useStyles = createStyles((theme) => ({
-  banner: {
-    marginTop: "20px",
-    color:"white",
-    width: "100%",
-    backgroundColor: "#5f594f",
-    height: "350px",
+  imgSized: {
+    [theme.fn.smallerThan("sm")]: {
+      width: "200px",
+      height: "200px",
+
+    },
   },
   IcoText: {
     fontWeight: "300",
@@ -22,17 +23,11 @@ const useStyles = createStyles((theme) => ({
     marginLeft: "10px",
     marginTop: '-20px',
   },
-  bannerContent:{
-    margin:"5px auto",
-    width: "1000px"
-  }
 }));
 
 
 
-
-
-const Events = ({ bestSelling }) => {
+const Discover = ({ bestSelling }) => {
   const { classes, theme } = useStyles();
 
   const styles= {
@@ -109,31 +104,16 @@ const Events = ({ bestSelling }) => {
                     </Grid.Col>
             </Grid>
 
-            <section className={classes.banner}>
-              <Center>
-                <h4 style={{marginTop: "30px"}}>
-                  LA MAJORITÉ DE NOS PRODUITS SONT
-                </h4>
-              </Center>
-              <Center>
-                <Grid className={classes.bannerContent}>
-                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180} objectFit={"contain"} /><br /><Center className={classes.IcoText}>SANS OGM</Center></Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon2.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>VÉGÉTALIEN</Center></Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon3.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>SANS GLUTEN</Center></Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon4.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>SANS PRODUITS LAITIERS</Center></Grid.Col>
-                    <Grid.Col span={2}><Image src={"/icon1.png"} width={180} height={180}  objectFit={"contain"} /><br /><Center className={classes.IcoText}>HALAL</Center></Grid.Col>
-                </Grid>
-              </Center>
-              </section>
+            <BannerProd />
 
           <section style={{margin: "40px 0", textTransform: "uppercase"}}>
             <Center> <h2>Découvrez nos offres du moment</h2> </Center>
             <Center> <Text>Profitez de nos promotions pour essayer quelque chose de nouveau!</Text> </Center>
           </section>
             <Grid>
-                    <Grid.Col style={{border: "1px solid #ccc", padding: "40px"}} offset={1} sm={10}  md={4}>
+                    <Grid.Col style={{border: "1px solid #ccc", padding: "40px", marginBottom: "10px"}} offset={1} sm={10}  md={4}>
                       <Center>
-                        <Image src={"/NG.jpg"} width={350} height={350} />
+                        <Image src={"/NG.jpg"} width={350} height={350} className={classes.imgSized}/>
                       </Center>
                       <Center>
                         <h3 style={{textAlign: "center"}}>DISPONNIBLE DANS LES PHARMACIES </h3>
@@ -141,7 +121,7 @@ const Events = ({ bestSelling }) => {
                     </Grid.Col>
                     <Grid.Col style={{border: "1px solid #ccc", padding: "40px"}} offset={1} sm={10}  md={4}>
                       <Center>
-                        <Image src={"/az3.jpg"} width={350} height={350} />
+                        <img src={"/az3.jpg"} width={350} height={350} className={classes.imgSized}/>
                       </Center>
                       <div style={{textAlign: "Center"}}>
                         <h3 style={{textTransform: "uppercase", marginTop:"10px"}}>nos Meilleurs ventes</h3>
@@ -156,7 +136,7 @@ const Events = ({ bestSelling }) => {
   );
 };
 
-export default Events;
+export default Discover;
 
 export async function getServerSideProps() {
   const { products } = await import("../../data/products.json");

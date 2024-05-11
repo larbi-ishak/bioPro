@@ -5,7 +5,7 @@ import BaseButton from './baseButton';
 
 const useStyles = createStyles((theme) => ({
   card: {
-    height: rem(300),
+    height: rem(310),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -14,8 +14,11 @@ const useStyles = createStyles((theme) => ({
     backgroundPosition: 'center',
   },
   CarouselTxtWrapper: {
-    marginLeft: "150px",
     marginTop: "60px",
+    [theme.fn.smallerThan('sm')]: {
+      margin: "0",
+    marginLeft: "15px",
+    },
   },
   CarouselText: {
     fontWeight: "1000",
@@ -55,7 +58,7 @@ function Card({ image, title}) {
       shadow="md"
       p="xl"
       radius="md"
-      sx={{ backgroundImage: `url(${image})` }}
+      sx={{ backgroundImage: `url(${image})`,backgroundSize: "contain"}}
       className={classes.card}
     >
       <div className={classes.CarouselTxtWrapper}>
