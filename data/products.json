@@ -66,7 +66,6 @@
     },
     {
       "id": 2,
-      "best": true,
       "title": "VITAMINE D3 4,000 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires"] ,
@@ -139,7 +138,6 @@
     },
     {
       "id": 4,
-      "best": true,
       "title": "ACIDOPHILUS",
       "desc": "ACIDOPHILUS",
       "category": ["Compléments Alimentaires", "Gynecologie", "Pediatrie"] ,
@@ -266,6 +264,7 @@
     },
     {
       "id": 8,
+      "best": true,
       "title": "A-Z MULTIVITAMINES ET MENIRALES",
       "desc": "A-Z MULTIVITAMINES ET MENIRALES",
       "category": ["Compléments Alimentaires", "Gynecologie"] ,
@@ -920,68 +919,246 @@
     "image": "/b_complex.png"
     },{
       "id": 19,
-      "title": "COMPLEX B",
-      "desc": "COMPLEX B",
+      "title": "MAGNÉSIUM ZINC ET B6",
+      "desc": "MAGNÉSIUM ZINC ET B6",
       "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
-      "price": 949.98,
+      "price": 1100,
       "comprimes": "30 comprimes",
       "utilisation": "6 ans et plus",
-      "mode d'emploi": "1 à 2 comprimés par jour a croquer ou selon les recommandations de votre médecin ou de votre pharmacien.",
+      "mode d'emploi": "1 a 2 Comprimés par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien",
       "indications":[
         { 
-        "name": "Prévention des malformations congénitales"
+        "name": "Réduit le stress et le surmenage"
         },
         { 
-        "name": "Prévention d’anémie par carence en B9 et B12"
+        "name": "Soulage les crampes musculaires"
         },
         { 
-        "name": "Améliore les signes cutanéo-muqueax telle que: dermite séborréhéique, chéilite stomatite"
+        "name": "Maintien de la santé des os et des dents ( le magnésium augment l absorption de d 3)"
         },
         { 
-        "name": "Protège des neurones et réduit les douleurs neuropathiques"
+        "name": "Réduit l’acidité gastrique (oxydes de magnésium)"
         },
         { 
-        "name": "Augmente le métabolisme énergétique"
+        "name": "Révenient les troubles cardiovasculaires, l'ostéoporose, les calculs rénaux et le diabète de type 2"
+        },
+        { 
+        "name": "Soulage les symptômes du syndrome prémenstruel et de la migraine"
         }
-
 
       ],
       "composantes": [
         {
-          "composanteActive": "Vitamine B3",
-          "concentration": "16 mg"
+          "composanteActive": "L'oxyde de magnésium",
+          "concentration": "626 mg"
         },
         {
-          "composanteActive": "Vitamine B5",
-          "concentration": "6 mg"
+          "composanteActive": "Gluconate de zinc",
+          "concentration": "50 mg"
         },
         {
           "composanteActive": "Vitamine B6",
           "concentration": "1.4 mg"
-        },
-        {
-          "composanteActive": "Vitamine B1 (Thiamin)",
-          "concentration": "1.1 mg"
-        },
-        {
-          "composanteActive": "Vitamine B2 (Riboflavin)",
-          "concentration": "1.4 mg"
-        },
-        {
-          "composanteActive": "Vitamine B12",
-          "concentration": "2.5 ug"
-        },
-        {
-          "composanteActive": "Vitamine B9 (Folic Acid)",
-          "concentration": "200 ug"
-        },
-        {
-          "composanteActive": "Vitamine B8 (Biotin)",
-          "concentration": "50 ug"
         }
         
       ],
-    "image": "/b_complex.png"
+    "image": "/zink+megh.png"
+    }
+    ,{
+      "id": 20,
+      "title": "TESTOBOOST",
+      "desc": "TESTOBOOST",
+      "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
+      "price": 1750,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 a 2 géllules par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien",
+      "indications":[
+        { 
+        "name": "Augmente l’endurance sexuelle et la libido.  Procurer des érections fortes, durables et des orgasmes plus intenses"
+        },
+        { 
+        "name": "Résoudre les problèmes d’éjaculation précoce"
+        },
+        { 
+        "name": "améliore la fertilité chez l’homme"
+        },
+        { 
+        "name": "protège les spermatozoïdes des dommage oxydatifs et augmentent leur motilité"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Poudre de fenugrec",
+          "concentration": "100 mg"
+        },
+        {
+          "composanteActive": "Extrait de Ginkgo Biloba",
+          "concentration": "30 mg"
+        },
+        {
+          "composanteActive": "Extrait de Tribulus Terrestris",
+          "concentration": "30 mg"
+        },
+        {
+          "composanteActive": "Cresson",
+          "concentration": "25 mg"
+        },
+        {
+          "composanteActive": "Extrait de MACA",
+          "concentration": "25 mg"
+        },
+        {
+          "composanteActive": "Extrait d'ail",
+          "concentration": "10 mg"
+        },
+        {
+          "composanteActive": "Extrait d'Avena Sativa",
+          "concentration": "10 mg"
+        },
+        {
+          "composanteActive": "Extrait de poivre noir",
+          "concentration": "10 mg"
+        },
+        {
+          "composanteActive": "Extrait de brocoli",
+          "concentration": "25 mg"
+        }
+        
+      ],
+    "image": "/testoboost.png"
+    }
+    ,{
+      "id": 21,
+      "title": "NOOTROPICS",
+      "desc": "NOOTROPICS",
+      "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
+      "price": 1650,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 a 2 géllules par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien",
+      "indications":[
+        { 
+        "name": "Stimule la mémoire et Améliore la concentration"
+        },
+        { 
+        "name": "Contribue au fonctionnement normal du système nerveux"
+        },
+        { 
+        "name": "Lutte contre le vieillissement du cerveau "
+        },
+        {
+          "name": "prévient les maladies neurodégénératives telles qu’Alzheimer"
+        },
+        { 
+        "name": "Améliore les performances intellectuelles et l’apprentissage"
+        },
+        { 
+        "name": "Améliore les Troubles de mémoire dus à l’âge ou un stress chronique"
+        },
+        { 
+        "name": "protège les spermatozoïdes des dommage oxydatifs et augmentent leur motilité"
+        }
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Carnitine (L-) N- Acétyle",
+          "concentration": "25 mg"
+        },
+        {
+          "composanteActive": "Bitartrate de L-Choline",
+          "concentration": "100 mg"
+        },
+        {
+          "composanteActive": "Extrait de Thé Vert",
+          "concentration": "25 mg"
+        },
+        {
+          "composanteActive": "L-Arginine",
+          "concentration": "25 mg"
+        },
+        {
+          "composanteActive": "L-Taurine",
+          "concentration": "50 mg"
+        },
+        {
+          "composanteActive": "L-Tyrosine",
+          "concentration": "100 mg"
+        },
+        {
+          "composanteActive": "phosphatidylsérine",
+          "concentration": "20 mg"
+        },
+        {
+          "composanteActive": "Extrait de Ginkgo Biloba",
+          "concentration": "105 mg"
+        },
+        {
+          "composanteActive": "Extrait de betterave",
+          "concentration": "75 mg"
+        },
+        {
+          "composanteActive": "Extrait de poivre noir",
+          "concentration": "25 mg"
+        },
+        {
+          "composanteActive": "Extrait de raisin",
+          "concentration": "10 mg"
+        },
+        {
+          "composanteActive": "Extrait de Guarana",
+          "concentration": "45 mg"
+        },
+        {
+          "composanteActive": "L-théanine",
+          "concentration": "25 mg"
+        }
+        
+      ],
+    "image": "/nootropro.png"
+    },
+    {
+      "id": 22,
+      "best": true,
+      "title": "OMEGA-3",
+      "desc": "OMEGA-3",
+      "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
+      "price": 950,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 a 3 capsules par jour avec un verre d’eau ou selon les recommandations de votre médecin ou de votre pharmacien",
+      "indications":[
+        { 
+        "name": "Stimule la mémoire et Améliore la concentration"
+        },
+        { 
+        "name": "Augmente la masse musculaire"
+        },
+        { 
+        "name": "Protection cardio-visculaire"
+        },
+        { 
+        "name": "Stimule la mémoire et Améliore la concentration"
+        }
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Huile de poisson",
+          "concentration": "1000 mg"
+        },
+        {
+          "composanteActive": "EPA",
+          "concentration": "180 mg"
+        },
+        {
+          "composanteActive": "DHA",
+          "concentration": "130 mg"
+        }
+        
+      ],
+    "image": "/omega3.png"
     }
   ],
 
