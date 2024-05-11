@@ -15,12 +15,7 @@ import { TableScrollAr } from "@/src/components/productsComponents/inTable";
     wrapper: {
       paddingTop: "15px",
       paddingBottom: "15px",
-    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
-      theme.colors.teal[4]
-    } 100%)`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'top left',
-      position: 'relative',
+      backgroundColor: "#B3F4CD",
       color: theme.black,
     },
   

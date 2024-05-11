@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IconCheck } from '@tabler/icons-react';
 import { Text, Button, Grid, Kbd,  Center, createStyles, Title, Divider} from "@mantine/core";
 import { BadgeCard } from "@/src/components/productsComponents/mainProd";
 import Link from "next/link";
@@ -10,18 +11,35 @@ import Head from "next/head";
 import AgrandirImg from "@/src/components/ProdImgAgr";
 
 const useStyles = createStyles((theme) => ({
+  hip:{
+    padding: "5px",
+    margin: '3px',
+    backgroundColor: "white",
+    color: "black",
+    borderRadius: "14px"
+
+  },
     kbd: {
       fontSize: "23px",
       color: "black",
       fontWeight: "bold",
       letterSpacing: "1px"
     },
-
+    Link: {
+      textDecoration: "none",
+      color: "white",
+      backgroundColor: "black",
+      fontWeight: "bold",
+      textTransform: "uppercase",
+      padding: "15px 40px",
+      width: "100%",
+      [theme.fn.smallerThan("sm")]: {
+        display: "block"
+      }
+    },
     button: {
-    backgroundImage: `linear-gradient(135deg, ${theme.colors.teal[9]} 0%, ${
-      theme.colors.teal[4]
-    } 100%)`,
-    marginLeft: "8px"
+      backgroundColor: "#5f594f",
+      marginLeft: "8px"
     }
 
 }))
@@ -39,6 +57,8 @@ const Product = ({ id, data, similarProds }) => {
     },
     wrapper: {
       margin: "20px auto",
+      display: "flex",
+      alignItems: "center"
     }
   }
   const [quantity, setQuantity] = useState(1);
@@ -105,39 +125,42 @@ const Product = ({ id, data, similarProds }) => {
       </Head>
     
     <div>
-      <Grid gutter={{ base: 2 }}>
+            <section style={{display: "flex", justifyContent: "space-around", flexWrap: "wrap"}} >
 
-            <Grid.Col sm={12} md={4} offset={1} span={"auto"} >
               <AgrandirImg image={image}/>
-            </Grid.Col>
 
-            <Grid.Col md={6}>
+              <div>
                 <Title>{data.title}</Title>
+                <div className={classes.kbd} >{data.price} DA</div>
+                <Divider />
+
                 <div style={styles.wrapper}>
-                  <div className={classes.kbd} >{data.price} DA</div>
-                  <fieldset style={{display:"inline"}}>
+
+                  <fieldset style={{width:"220px"}}>
                     <legend>
-                 <Title order={5} style={{display: "inline", padding: "10px 5px"}}>Quantité:</Title> 
+                      <Title order={5} style={{display: "inline", padding: "10px 5px", color: "#5f594f"}}>Quantité:</Title> 
                     </legend>
-                        <Button className={classes.button} style={styles.buttonWrapper}>
-                          <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
-                        </Button>
-                            <Kbd className={classes.kbd}>{quantity}</Kbd>
-                        <Button className={classes.button} style={styles.buttonWrapper}>
-                          <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
-                        </Button>
+
+                    <Button className={classes.button} style={styles.buttonWrapper}>
+                      <button style={styles.button} onClick={() => handleQuantity("+")}>+</button>
+                    </Button>
+
+                    <span >{quantity}</span>
+
+                    <Button className={classes.button} style={styles.buttonWrapper}>
+                      <button style={styles.button} onClick={() => handleQuantity("-")}>-</button>
+                    </Button>
                   </fieldset>
+
                   <Modal opened={opened} onClose={close} withCloseButton={false}>
-                  Article ajouté au panier
+                     Article ajouté au panier
                   </Modal>
-                  <Button className={classes.button} onClick={open} style={styles.buttonWrapper}>
-                    <button style={styles.button} onClick={handle_add_to_cart}>Ajouter au panier</button>{" "}
+
+                  <Button className={classes.Link} onClick={open} style={styles.buttonWrapper}>
+                    <button style={styles.button}  onClick={handle_add_to_cart}>Ajouter au panier</button>{" "}
                   </Button>
 
                   <Divider></Divider>
-                     <Text>Habituellement expédiée sous 24h</Text>
-                    <Text>Livraison standard offerte</Text>
-                      <Text>Retour facile </Text>
 
                   <br />
                   {/*<Title order={5} style={{display: "inline"}}>PRIX TOTAL: </Title><Kbd className={classes.kbd} >{Math.round(data.price * quantity)} DA</Kbd> */}
@@ -150,33 +173,45 @@ const Product = ({ id, data, similarProds }) => {
                   </Button> */}
 
                 </div>
-            </Grid.Col>
+                    <Text style={{color: "#5f594f"}}><IconCheck /> Habituellement expédiée sous 24h</Text>
+                    <Text style={{color: "#5f594f"}}><IconCheck />Livraison standard offerte</Text>
+                    <Text style={{color: "#5f594f"}}><IconCheck />Retour facile </Text>
+              </div>
 
-      </Grid>
+            </section>
 
-      <Grid >
-            <Grid.Col sm={12} md={5} offset={1} >
+      <Grid style={{marginTop: "10px"}}>
+            <Grid.Col sm={12} md={5} offset={1}  style={{backgroundColor: "#B3F4CD"}}>
               <FaqWithBg data={data}/>
             </Grid.Col>
-            <Grid.Col md={5}>
-            <h1>Besoins alimentaires</h1>
-            <p>Vegan</p>
-            <p>Végétarien</p>
-            <p>Sans gluten</p>
-<h2>Besoin d’aide ?</h2>
-<Text>
-Solgar met à votre disposition une équipe de conseillers
-qui répond à toutes vos questions.
-Informations
-</Text>
-<Link href={"/contact"}>Contactez-nous</Link>
+            <Grid.Col md={5} style={{backgroundColor: "#B3F4CD"}}>
+              <section style={{display: "flex", flexDirection: "column", justifyContent: "space-between"}}>
+                <div >
+                    <h2 style={{marginBottom: "10px", textTransform: "uppercase"}}>Besoins alimentaires</h2>
+                    <div style={{display: "flex"}}>
+                      <p className={classes.hip}>Vegan</p>
+                      <p className={classes.hip}>Végétarien</p>
+                      <p className={classes.hip}>Sans gluten</p>
+                    </div>
+                </div>
+                <div style={{color: "#5f594f", marginTop: '20px'}} >
+                    <h2>Besoin d’aide ?</h2>
+                    <Text>
+                      Solgar met à votre disposition une équipe de conseillers
+                      qui répond à toutes vos questions.
+                      Informations
+                    </Text>
+                    <Link href={"/contact"} style={{textDecoration: "underline", color: "#5f594f"}}>Contactez-nous</Link>
+                </div>
+
+              </section>
             </Grid.Col>
       </Grid>
 
-      <section>
-        <h3>Experiences et avis</h3>
-        aucun avis sur ce produit
-        <button> ECRIRE UN AVIS</button>
+      <section style={{margin: '10px 60px'}}>
+        <h3 style={{textTransform: "uppercase"}}>Expériences et avis</h3>
+        aucun avis sur ce produit <br />
+        <button className={classes.Link} style={{marginTop: "20px",width:"200px"}}> ECRIRE UN AVIS</button>
       </section>
 
         {/*

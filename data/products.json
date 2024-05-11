@@ -172,7 +172,7 @@
     },
     {
       "id": 5,
-      "title": "VITAMINE D3 5,000 UI",
+      "title": "VITAMINE D3 50,000 UI",
       "desc": "VITAMINE D3",
       "category": ["Compléments Alimentaires" , "Gynecologie"] ,
       "price": 720,
@@ -197,7 +197,7 @@
       "composantes": [
         {
           "composanteActive": "Vitamine D",
-          "concentration": "5,000 IU"
+          "concentration": "50,000 IU"
         }
       ],
     "image": "/vit_d3_5000.png"
@@ -856,6 +856,70 @@
     },
     {
       "id": 18,
+      "title": "COMPLEX B",
+      "desc": "COMPLEX B",
+      "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
+      "price": 949.98,
+      "comprimes": "30 comprimes",
+      "utilisation": "6 ans et plus",
+      "mode d'emploi": "1 à 2 comprimés par jour a croquer ou selon les recommandations de votre médecin ou de votre pharmacien.",
+      "indications":[
+        { 
+        "name": "Prévention des malformations congénitales"
+        },
+        { 
+        "name": "Prévention d’anémie par carence en B9 et B12"
+        },
+        { 
+        "name": "Améliore les signes cutanéo-muqueax telle que: dermite séborréhéique, chéilite stomatite"
+        },
+        { 
+        "name": "Protège des neurones et réduit les douleurs neuropathiques"
+        },
+        { 
+        "name": "Augmente le métabolisme énergétique"
+        }
+
+
+      ],
+      "composantes": [
+        {
+          "composanteActive": "Vitamine B3",
+          "concentration": "16 mg"
+        },
+        {
+          "composanteActive": "Vitamine B5",
+          "concentration": "6 mg"
+        },
+        {
+          "composanteActive": "Vitamine B6",
+          "concentration": "1.4 mg"
+        },
+        {
+          "composanteActive": "Vitamine B1 (Thiamin)",
+          "concentration": "1.1 mg"
+        },
+        {
+          "composanteActive": "Vitamine B2 (Riboflavin)",
+          "concentration": "1.4 mg"
+        },
+        {
+          "composanteActive": "Vitamine B12",
+          "concentration": "2.5 ug"
+        },
+        {
+          "composanteActive": "Vitamine B9 (Folic Acid)",
+          "concentration": "200 ug"
+        },
+        {
+          "composanteActive": "Vitamine B8 (Biotin)",
+          "concentration": "50 ug"
+        }
+        
+      ],
+    "image": "/b_complex.png"
+    },{
+      "id": 19,
       "title": "COMPLEX B",
       "desc": "COMPLEX B",
       "category": ["Compléments Alimentaires", "Dermatologie", "Gynecologie", "Pediatrie"] ,
